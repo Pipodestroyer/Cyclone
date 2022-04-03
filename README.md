@@ -1,0 +1,1 @@
+This is the repository from my principal beta bot, this is dev and problably is getting errors and updates every time. dont mind of it.
