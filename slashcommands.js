@@ -1,31 +1,34 @@
-const fs = require("fs")
-const Discord = require("discord.js")
-const { REST } = require("@discordjs/rest")
-const { Routes } = require("discord-api-types/v9")
-const { CycloneId, guild } = require("./config.json")
-const { config } = require("dotenv");
-const commands = []
-const slashcommandsFiles = fs.readdirSync("./Comandos").filter(file => file.endsWith("js"))
+const { REST } = require('@discordjs/rest');
+const { Routes, Collection, SlashCommandStringOption } = require('discord.js');
+const { token } = require('./config.json');
 
-for(const file of slashcommandsFiles){
-    const slash = require(`./Comandos/${file}`)
-    commands.push(slash.data.toJSON())
+require('dotenv').config();
+const fs = require('node:fs');
+
+const commands = [];
+const commandFiles = fs.readdirSync('./Comandos').filter(file => file.endsWith('.js'));
+
+// Place your client and guild ids here
+const clientId = '911022283068436550';
+
+for (const file of commandFiles) {
+	const command = require(`./Comandos/${file}`);
+	commands.push(command.data.toJSON());
 }
 
-const rest = new REST({ version: "9" }).setToken("OTExMDIyMjgzMDY4NDM2NTUw.YZbVng.n0Ev696dPoyM3ra6QCkqthwto4c")
+const rest = new REST({ version: '10' }).setToken(`${process.env.discord_token}`);
 
-createSlash()
+(async () => {
+	try {
+		console.log('Started refreshing application (/) commands.');
 
-async function createSlash(){
-    try{
-        await rest.put(
-            Routes.applicationCommands(CycloneId), { //no puedo usar el nombre, el id es el id del bot. para que discord entienda que es tu bot, solo pon la id de tu cliente en config.json y reemplaza la de cylone
-                body: commands
+		await rest.put(
+			Routes.applicationCommands(clientId),
+			{ body: commands },
+		);
 
-            }
-        )
-        console.log("A new command was created.")
-    } catch(e) {
-        console.error(e)
-    }
-}
+		console.log('Successfully reloaded application (/) commands.');
+	} catch (error) {
+		console.error(error);
+	} 
+})();

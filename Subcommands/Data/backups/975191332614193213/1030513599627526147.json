@@ -1,0 +1,1686 @@
+{
+    "name": "🎃 SpookyLand 👻",
+    "verificationLevel": 2,
+    "explicitContentFilter": 2,
+    "defaultMessageNotifications": 1,
+    "afk": {
+        "name": "🥕 AFK",
+        "timeout": 300
+    },
+    "widget": {
+        "enabled": null,
+        "channel": null
+    },
+    "channels": {
+        "categories": [],
+        "others": []
+    },
+    "roles": [
+        {
+            "name": "⠀",
+            "color": "#ad1457",
+            "hoist": false,
+            "permissions": "2199023255551",
+            "mentionable": false,
+            "position": 155,
+            "isEveryone": false
+        },
+        {
+            "name": "Kaiser 🦄",
+            "color": "#000000",
+            "hoist": true,
+            "permissions": "1089012629313",
+            "mentionable": false,
+            "position": 154,
+            "isEveryone": false
+        },
+        {
+            "name": "Co Owner",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "2199023255551",
+            "mentionable": false,
+            "position": 153,
+            "isEveryone": false
+        },
+        {
+            "name": "Administrador",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "2199023255551",
+            "mentionable": false,
+            "position": 152,
+            "isEveryone": false
+        },
+        {
+            "name": "Novasep Security",
+            "color": "#518aee",
+            "hoist": true,
+            "permissions": "2199023255543",
+            "mentionable": false,
+            "position": 151,
+            "isEveryone": false
+        },
+        {
+            "name": "Bot de Seguridad",
+            "color": "#8ca0ff",
+            "hoist": false,
+            "permissions": "974994607689",
+            "mentionable": false,
+            "position": 150,
+            "isEveryone": false
+        },
+        {
+            "name": "Bots",
+            "color": "#36adff",
+            "hoist": false,
+            "permissions": "2199023255551",
+            "mentionable": false,
+            "position": 149,
+            "isEveryone": false
+        },
+        {
+            "name": "Moderador Superior",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "2198486249207",
+            "mentionable": false,
+            "position": 148,
+            "isEveryone": false
+        },
+        {
+            "name": "Moderador",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "2198217813703",
+            "mentionable": false,
+            "position": 147,
+            "isEveryone": false
+        },
+        {
+            "name": "Staff",
+            "color": "#000000",
+            "hoist": true,
+            "permissions": "0",
+            "mentionable": true,
+            "position": 146,
+            "isEveryone": false
+        },
+        {
+            "name": "Aspirante a Staff",
+            "color": "#000000",
+            "hoist": true,
+            "permissions": "2169209482819",
+            "mentionable": false,
+            "position": 145,
+            "isEveryone": false
+        },
+        {
+            "name": "🎊",
+            "color": "#fea1c9",
+            "hoist": false,
+            "permissions": "2199023255551",
+            "mentionable": false,
+            "position": 144,
+            "isEveryone": false
+        },
+        {
+            "name": "Muted",
+            "color": "#666666",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 143,
+            "isEveryone": false
+        },
+        {
+            "name": "Podcaster",
+            "color": "#000000",
+            "hoist": true,
+            "permissions": "975015710529",
+            "mentionable": false,
+            "position": 142,
+            "isEveryone": false
+        },
+        {
+            "name": "Diseñador Gráfico",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "966404673089",
+            "mentionable": false,
+            "position": 141,
+            "isEveryone": false
+        },
+        {
+            "name": "Encargados de Alianzas",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "6546771521",
+            "mentionable": false,
+            "position": 140,
+            "isEveryone": false
+        },
+        {
+            "name": "Giveaways",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "966404673089",
+            "mentionable": false,
+            "position": 139,
+            "isEveryone": false
+        },
+        {
+            "name": "Bot de Pruebas",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "966404673089",
+            "mentionable": false,
+            "position": 138,
+            "isEveryone": false
+        },
+        {
+            "name": "Prueba",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "1071698529857",
+            "mentionable": false,
+            "position": 137,
+            "isEveryone": false
+        },
+        {
+            "name": "#team muertitas",
+            "color": "#fd98ff",
+            "hoist": false,
+            "permissions": "966404673089",
+            "mentionable": false,
+            "position": 136,
+            "isEveryone": false
+        },
+        {
+            "name": "aiko 🍰",
+            "color": "#fcffaa",
+            "hoist": false,
+            "permissions": "966404673089",
+            "mentionable": false,
+            "position": 135,
+            "isEveryone": false
+        },
+        {
+            "name": "OwO?",
+            "color": "#00ffff",
+            "hoist": true,
+            "permissions": "966404673089",
+            "mentionable": false,
+            "position": 134,
+            "isEveryone": false
+        },
+        {
+            "name": "La Muerte",
+            "color": "#7f0ab3",
+            "hoist": true,
+            "permissions": "966404673089",
+            "mentionable": false,
+            "position": 133,
+            "isEveryone": false
+        },
+        {
+            "name": "putifake",
+            "color": "#9ea2ff",
+            "hoist": false,
+            "permissions": "966404673089",
+            "mentionable": false,
+            "position": 132,
+            "isEveryone": false
+        },
+        {
+            "name": "El Dios del Sexo",
+            "color": "#dd72eb",
+            "hoist": false,
+            "permissions": "966404673089",
+            "mentionable": false,
+            "position": 131,
+            "isEveryone": false
+        },
+        {
+            "name": "Conquistador de abuelas",
+            "color": "#5c41f2",
+            "hoist": false,
+            "permissions": "966404673089",
+            "mentionable": false,
+            "position": 130,
+            "isEveryone": false
+        },
+        {
+            "name": "The world Over heaven",
+            "color": "#f0f0f0",
+            "hoist": false,
+            "permissions": "966404673089",
+            "mentionable": false,
+            "position": 129,
+            "isEveryone": false
+        },
+        {
+            "name": "Hideri Kanzaki",
+            "color": "#ffffff",
+            "hoist": true,
+            "permissions": "966404673089",
+            "mentionable": false,
+            "position": 128,
+            "isEveryone": false
+        },
+        {
+            "name": "!🎖️Gabo🎖️[🍰]",
+            "color": "#e7e7e7",
+            "hoist": false,
+            "permissions": "451075706433",
+            "mentionable": false,
+            "position": 127,
+            "isEveryone": false
+        },
+        {
+            "name": "Poki!",
+            "color": "#f1f2f2",
+            "hoist": true,
+            "permissions": "451008597569",
+            "mentionable": true,
+            "position": 126,
+            "isEveryone": false
+        },
+        {
+            "name": "Matenme",
+            "color": "#ff0101",
+            "hoist": false,
+            "permissions": "966404673089",
+            "mentionable": false,
+            "position": 125,
+            "isEveryone": false
+        },
+        {
+            "name": "Femboy latinoamericano",
+            "color": "#ffbcf8",
+            "hoist": false,
+            "permissions": "966404673089",
+            "mentionable": false,
+            "position": 124,
+            "isEveryone": false
+        },
+        {
+            "name": "Ex - Maestro de esta bola de pendejos",
+            "color": "#60ee27",
+            "hoist": false,
+            "permissions": "966404673089",
+            "mentionable": false,
+            "position": 123,
+            "isEveryone": false
+        },
+        {
+            "name": "Neptu",
+            "color": "#83ffff",
+            "hoist": false,
+            "permissions": "966404673089",
+            "mentionable": false,
+            "position": 122,
+            "isEveryone": false
+        },
+        {
+            "name": "sisi",
+            "color": "#bbd8f8",
+            "hoist": false,
+            "permissions": "966404673089",
+            "mentionable": false,
+            "position": 121,
+            "isEveryone": false
+        },
+        {
+            "name": "💜El Mishi💜",
+            "color": "#5d00b3",
+            "hoist": false,
+            "permissions": "966404673089",
+            "mentionable": false,
+            "position": 120,
+            "isEveryone": false
+        },
+        {
+            "name": "El Rey Del Sexo",
+            "color": "#ffff57",
+            "hoist": false,
+            "permissions": "451075706433",
+            "mentionable": false,
+            "position": 119,
+            "isEveryone": false
+        },
+        {
+            "name": "ᨓ ⭐ ៹ Especial ᘏ₊",
+            "color": "#000000",
+            "hoist": true,
+            "permissions": "1071832747841",
+            "mentionable": false,
+            "position": 118,
+            "isEveryone": false
+        },
+        {
+            "name": "ᨓ 🍺 ៹ Leyendas ᘏ₊",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "1071698534209",
+            "mentionable": false,
+            "position": 117,
+            "isEveryone": false
+        },
+        {
+            "name": "Partner",
+            "color": "#000000",
+            "hoist": true,
+            "permissions": "1071698534209",
+            "mentionable": false,
+            "position": 115,
+            "isEveryone": false
+        },
+        {
+            "name": "Veteranos",
+            "color": "#000000",
+            "hoist": true,
+            "permissions": "966404673089",
+            "mentionable": false,
+            "position": 114,
+            "isEveryone": false
+        },
+        {
+            "name": "YouTuber",
+            "color": "#000000",
+            "hoist": true,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 113,
+            "isEveryone": false
+        },
+        {
+            "name": "⠀",
+            "color": "#363940",
+            "hoist": false,
+            "permissions": "451075706433",
+            "mentionable": false,
+            "position": 112,
+            "isEveryone": false
+        },
+        {
+            "name": "⠀",
+            "color": "#ffffff",
+            "hoist": false,
+            "permissions": "451075706433",
+            "mentionable": false,
+            "position": 111,
+            "isEveryone": false
+        },
+        {
+            "name": "⠀",
+            "color": "#020202",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 110,
+            "isEveryone": false
+        },
+        {
+            "name": "⠀",
+            "color": "#131313",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 109,
+            "isEveryone": false
+        },
+        {
+            "name": "⠀",
+            "color": "#181818",
+            "hoist": false,
+            "permissions": "4399140417",
+            "mentionable": false,
+            "position": 108,
+            "isEveryone": false
+        },
+        {
+            "name": "⠀",
+            "color": "#f5ff00",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 107,
+            "isEveryone": false
+        },
+        {
+            "name": "⠀",
+            "color": "#f7ff2a",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 106,
+            "isEveryone": false
+        },
+        {
+            "name": "⠀",
+            "color": "#fcffaa",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 105,
+            "isEveryone": false
+        },
+        {
+            "name": "⠀",
+            "color": "#ff0000",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 104,
+            "isEveryone": false
+        },
+        {
+            "name": "⠀",
+            "color": "#ff2a2a",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 103,
+            "isEveryone": false
+        },
+        {
+            "name": "⠀",
+            "color": "#ff6c6e",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 102,
+            "isEveryone": false
+        },
+        {
+            "name": "⠀",
+            "color": "#0101df",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 101,
+            "isEveryone": false
+        },
+        {
+            "name": "⠀",
+            "color": "#2b2be4",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 100,
+            "isEveryone": false
+        },
+        {
+            "name": "⠀",
+            "color": "#7979ff",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 99,
+            "isEveryone": false
+        },
+        {
+            "name": "⠀",
+            "color": "#007500",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 98,
+            "isEveryone": false
+        },
+        {
+            "name": "⠀",
+            "color": "#2a8c2a",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 97,
+            "isEveryone": false
+        },
+        {
+            "name": "⠀",
+            "color": "#90ff90",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 96,
+            "isEveryone": false
+        },
+        {
+            "name": "⠀",
+            "color": "#ff7d00",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 95,
+            "isEveryone": false
+        },
+        {
+            "name": "⠀",
+            "color": "#ff932a",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 94,
+            "isEveryone": false
+        },
+        {
+            "name": "⠀",
+            "color": "#ff9f5c",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 93,
+            "isEveryone": false
+        },
+        {
+            "name": "⠀",
+            "color": "#a901db",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 92,
+            "isEveryone": false
+        },
+        {
+            "name": "⠀",
+            "color": "#b72be1",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 91,
+            "isEveryone": false
+        },
+        {
+            "name": "⠀",
+            "color": "#e992ff",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 90,
+            "isEveryone": false
+        },
+        {
+            "name": "⠀",
+            "color": "#ff00ca",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 89,
+            "isEveryone": false
+        },
+        {
+            "name": "⠀",
+            "color": "#ff55ce",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 88,
+            "isEveryone": false
+        },
+        {
+            "name": "⠀",
+            "color": "#ff70d8",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 87,
+            "isEveryone": false
+        },
+        {
+            "name": "⠀",
+            "color": "#00ffff",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 86,
+            "isEveryone": false
+        },
+        {
+            "name": "⠀",
+            "color": "#83ffff",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 85,
+            "isEveryone": false
+        },
+        {
+            "name": "⠀",
+            "color": "#2affff",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 84,
+            "isEveryone": false
+        },
+        {
+            "name": "⠀",
+            "color": "#773606",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 83,
+            "isEveryone": false
+        },
+        {
+            "name": "⠀",
+            "color": "#8e572f",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 82,
+            "isEveryone": false
+        },
+        {
+            "name": "⠀",
+            "color": "#ce8f60",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 81,
+            "isEveryone": false
+        },
+        {
+            "name": "México",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 80,
+            "isEveryone": false
+        },
+        {
+            "name": "Colombia",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 79,
+            "isEveryone": false
+        },
+        {
+            "name": "Argentina",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 78,
+            "isEveryone": false
+        },
+        {
+            "name": "Chile",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 77,
+            "isEveryone": false
+        },
+        {
+            "name": "Venezuela",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 76,
+            "isEveryone": false
+        },
+        {
+            "name": "Ecuador",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 75,
+            "isEveryone": false
+        },
+        {
+            "name": "Perú",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 74,
+            "isEveryone": false
+        },
+        {
+            "name": "Panamá",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 73,
+            "isEveryone": false
+        },
+        {
+            "name": "Guatemala",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 72,
+            "isEveryone": false
+        },
+        {
+            "name": "Uruguay",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 71,
+            "isEveryone": false
+        },
+        {
+            "name": "Costa Rica",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 70,
+            "isEveryone": false
+        },
+        {
+            "name": "El salvador",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 69,
+            "isEveryone": false
+        },
+        {
+            "name": "Paraguay",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 68,
+            "isEveryone": false
+        },
+        {
+            "name": "Bolivia",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 67,
+            "isEveryone": false
+        },
+        {
+            "name": "España",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 66,
+            "isEveryone": false
+        },
+        {
+            "name": "Puerto Rico",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 65,
+            "isEveryone": false
+        },
+        {
+            "name": "Cuba",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 64,
+            "isEveryone": false
+        },
+        {
+            "name": "Haití",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 63,
+            "isEveryone": false
+        },
+        {
+            "name": "Honduras",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 62,
+            "isEveryone": false
+        },
+        {
+            "name": "Nicaragua",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 61,
+            "isEveryone": false
+        },
+        {
+            "name": "Rep. Dominicana",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 60,
+            "isEveryone": false
+        },
+        {
+            "name": "Estados Unidos",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 59,
+            "isEveryone": false
+        },
+        {
+            "name": "Sorteos",
+            "color": "#ffca98",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 58,
+            "isEveryone": false
+        },
+        {
+            "name": "Encuestas",
+            "color": "#fffe98",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 57,
+            "isEveryone": false
+        },
+        {
+            "name": "Anuncios",
+            "color": "#cdff98",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 56,
+            "isEveryone": false
+        },
+        {
+            "name": "Alianzas",
+            "color": "#9aff98",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 55,
+            "isEveryone": false
+        },
+        {
+            "name": "Revivir Chat",
+            "color": "#98ffca",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 54,
+            "isEveryone": false
+        },
+        {
+            "name": "Eventos",
+            "color": "#98fffd",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 53,
+            "isEveryone": false
+        },
+        {
+            "name": "Actualizaciones",
+            "color": "#98cdff",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 52,
+            "isEveryone": false
+        },
+        {
+            "name": "Podcasts",
+            "color": "#989aff",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 51,
+            "isEveryone": false
+        },
+        {
+            "name": "Anime News",
+            "color": "#ca98ff",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 50,
+            "isEveryone": false
+        },
+        {
+            "name": "No Ping",
+            "color": "#fd98ff",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 49,
+            "isEveryone": false
+        },
+        {
+            "name": "NSFW",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 48,
+            "isEveryone": false
+        },
+        {
+            "name": "Hombre",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 47,
+            "isEveryone": false
+        },
+        {
+            "name": "Mujer",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 46,
+            "isEveryone": false
+        },
+        {
+            "name": "Transgénero",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 45,
+            "isEveryone": false
+        },
+        {
+            "name": "Secreto",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 44,
+            "isEveryone": false
+        },
+        {
+            "name": "Cocinar",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 43,
+            "isEveryone": false
+        },
+        {
+            "name": "Jugar",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 42,
+            "isEveryone": false
+        },
+        {
+            "name": "Leer",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 41,
+            "isEveryone": false
+        },
+        {
+            "name": "Escribir",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 40,
+            "isEveryone": false
+        },
+        {
+            "name": "Bailar",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 39,
+            "isEveryone": false
+        },
+        {
+            "name": "Programar",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 38,
+            "isEveryone": false
+        },
+        {
+            "name": "Moderar",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 37,
+            "isEveryone": false
+        },
+        {
+            "name": "Estudiar",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 36,
+            "isEveryone": false
+        },
+        {
+            "name": "Deportes",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 35,
+            "isEveryone": false
+        },
+        {
+            "name": "Simp de Áxomy",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 34,
+            "isEveryone": false
+        },
+        {
+            "name": "Diversión",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 33,
+            "isEveryone": false
+        },
+        {
+            "name": "Celular",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 32,
+            "isEveryone": false
+        },
+        {
+            "name": "Desktop",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 31,
+            "isEveryone": false
+        },
+        {
+            "name": "Chat Money",
+            "color": "#206694",
+            "hoist": false,
+            "permissions": "966404673089",
+            "mentionable": false,
+            "position": 30,
+            "isEveryone": false
+        },
+        {
+            "name": "Panadero",
+            "color": "#1df015",
+            "hoist": false,
+            "permissions": "966404673089",
+            "mentionable": false,
+            "position": 29,
+            "isEveryone": false
+        },
+        {
+            "name": "Indigente",
+            "color": "#dd14b2",
+            "hoist": false,
+            "permissions": "966404673089",
+            "mentionable": false,
+            "position": 28,
+            "isEveryone": false
+        },
+        {
+            "name": "Traficante de agua de chica gamer",
+            "color": "#694175",
+            "hoist": false,
+            "permissions": "966404673089",
+            "mentionable": false,
+            "position": 27,
+            "isEveryone": false
+        },
+        {
+            "name": "Mangaka",
+            "color": "#a84ebe",
+            "hoist": false,
+            "permissions": "966404673089",
+            "mentionable": false,
+            "position": 26,
+            "isEveryone": false
+        },
+        {
+            "name": "Reportero",
+            "color": "#5a45bd",
+            "hoist": false,
+            "permissions": "966404673089",
+            "mentionable": false,
+            "position": 25,
+            "isEveryone": false
+        },
+        {
+            "name": "Taxista",
+            "color": "#52e2c3",
+            "hoist": false,
+            "permissions": "966404673089",
+            "mentionable": false,
+            "position": 24,
+            "isEveryone": false
+        },
+        {
+            "name": "Psicólogo",
+            "color": "#202bc5",
+            "hoist": false,
+            "permissions": "966404673089",
+            "mentionable": false,
+            "position": 23,
+            "isEveryone": false
+        },
+        {
+            "name": "Millonario certificado",
+            "color": "#3fffda",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 22,
+            "isEveryone": false
+        },
+        {
+            "name": "Axomy económico",
+            "color": "#ffa332",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 21,
+            "isEveryone": false
+        },
+        {
+            "name": "Político",
+            "color": "#0267ff",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 20,
+            "isEveryone": false
+        },
+        {
+            "name": "Beso de Axomy",
+            "color": "#ffb0b0",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 19,
+            "isEveryone": false
+        },
+        {
+            "name": "Agente del FBI",
+            "color": "#ff5c5c",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 18,
+            "isEveryone": false
+        },
+        {
+            "name": "Heladero",
+            "color": "#ff75a6",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 17,
+            "isEveryone": false
+        },
+        {
+            "name": "Campesino",
+            "color": "#ffe38f",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 16,
+            "isEveryone": false
+        },
+        {
+            "name": "Sasuke económico",
+            "color": "#9f59ff",
+            "hoist": false,
+            "permissions": "966404673089",
+            "mentionable": false,
+            "position": 15,
+            "isEveryone": false
+        },
+        {
+            "name": "Babosa┊🐛",
+            "color": "#ffbcff",
+            "hoist": false,
+            "permissions": "2097408",
+            "mentionable": false,
+            "position": 14,
+            "isEveryone": false
+        },
+        {
+            "name": "GOD┊😎",
+            "color": "#debcff",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 13,
+            "isEveryone": false
+        },
+        {
+            "name": "Dios┊🎋",
+            "color": "#bdbcff",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 12,
+            "isEveryone": false
+        },
+        {
+            "name": "Coca Cola┊🍾",
+            "color": "#bcddff",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 11,
+            "isEveryone": false
+        },
+        {
+            "name": "Chad┊💪🏻",
+            "color": "#bcffff",
+            "hoist": false,
+            "permissions": "551903297536",
+            "mentionable": false,
+            "position": 10,
+            "isEveryone": false
+        },
+        {
+            "name": "Esclavo┊🧂",
+            "color": "#9df5ff",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 9,
+            "isEveryone": false
+        },
+        {
+            "name": "Rick Astley┊🎶",
+            "color": "#bcffde",
+            "hoist": false,
+            "permissions": "4297064448",
+            "mentionable": false,
+            "position": 8,
+            "isEveryone": false
+        },
+        {
+            "name": "Big Smoke┊🚬",
+            "color": "#bcffbc",
+            "hoist": false,
+            "permissions": "16384",
+            "mentionable": false,
+            "position": 7,
+            "isEveryone": false
+        },
+        {
+            "name": "Pog┊🌑",
+            "color": "#deffbc",
+            "hoist": false,
+            "permissions": "32768",
+            "mentionable": false,
+            "position": 6,
+            "isEveryone": false
+        },
+        {
+            "name": "Gamer┊🛴",
+            "color": "#ffffbc",
+            "hoist": false,
+            "permissions": "377957122048",
+            "mentionable": false,
+            "position": 5,
+            "isEveryone": false
+        },
+        {
+            "name": "Otaku┊💖",
+            "color": "#ffdebc",
+            "hoist": false,
+            "permissions": "67108864",
+            "mentionable": false,
+            "position": 4,
+            "isEveryone": false
+        },
+        {
+            "name": "Principiante┊👶🏻",
+            "color": "#ffbcbc",
+            "hoist": false,
+            "permissions": "0",
+            "mentionable": false,
+            "position": 3,
+            "isEveryone": false
+        },
+        {
+            "name": "Não XP┊❌",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "966404673089",
+            "mentionable": false,
+            "position": 2,
+            "isEveryone": false
+        },
+        {
+            "name": "Miembro",
+            "color": "#000000",
+            "hoist": true,
+            "permissions": "966404673089",
+            "mentionable": false,
+            "position": 1,
+            "isEveryone": false
+        },
+        {
+            "name": "@everyone",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "966404673089",
+            "mentionable": false,
+            "position": 0,
+            "isEveryone": true
+        }
+    ],
+    "bans": [
+        {
+            "id": "311577954264023050",
+            "reason": "Choripán#7135: usuario peligroso"
+        },
+        {
+            "id": "386961021887184906",
+            "reason": "Difamaciones contra un miembro inocente sobre un falso \"doxxeo\""
+        },
+        {
+            "id": "422479138360655889",
+            "reason": "Choripán#7135: usuario peligroso"
+        },
+        {
+            "id": "429479498728210432",
+            "reason": "Gore en grupo MD"
+        },
+        {
+            "id": "463777489429463040",
+            "reason": "Anti-Scam system."
+        },
+        {
+            "id": "478772845757988864",
+            "reason": "Choripán#7135: usuario peligroso"
+        },
+        {
+            "id": "505055251322241034",
+            "reason": "Acoso al MD y quedas reportado a Discord <:mimision:846227023101821050>"
+        },
+        {
+            "id": "510954095327051776",
+            "reason": "Anti-Scam system."
+        },
+        {
+            "id": "562410544787619850",
+            "reason": "Choripán#7135: usuario peligroso"
+        },
+        {
+            "id": "566392562240454667",
+            "reason": "Anti-Scam system."
+        },
+        {
+            "id": "569324898506244110",
+            "reason": "Áxomy#0102: gore en general"
+        },
+        {
+            "id": "569651448489574420",
+            "reason": "Anti-Scam system."
+        },
+        {
+            "id": "586320782188085260",
+            "reason": "Choripán#7135: usuario peligroso"
+        },
+        {
+            "id": "624379493359943711",
+            "reason": "Links maliciosos"
+        },
+        {
+            "id": "660363835462516738",
+            "reason": "Áxomy#5719: Intento de raid"
+        },
+        {
+            "id": "670022326070542399",
+            "reason": "Spam masivo de servidor, Mass ping y mass ping al staff"
+        },
+        {
+            "id": "692576165717606460",
+            "reason": "Usuario sospechoso"
+        },
+        {
+            "id": "699019722426941540",
+            "reason": "Actividades delictivas de robo de cuenta a múltiples usuarios de la comunidad incluyendo a Áxomy"
+        },
+        {
+            "id": "710442102089187339",
+            "reason": "gantrev#8819: posible raid"
+        },
+        {
+            "id": "711278929742135377",
+            "reason": "Áxomy#4757: Spam de nitro falso <:qur_:929224574170697748>"
+        },
+        {
+            "id": "734067285735768065",
+            "reason": "Anti-Scam system."
+        },
+        {
+            "id": "736635206781501534",
+            "reason": "Posted a phishing URL: dlscorrdapp.com"
+        },
+        {
+            "id": "738768511978963056",
+            "reason": "Raid"
+        },
+        {
+            "id": "739618263004086274",
+            "reason": "Toxicidad y darle mala imágen al servidor"
+        },
+        {
+            "id": "741012635889303602",
+            "reason": "Choripán#7135: usuario peligroso"
+        },
+        {
+            "id": "746095110630146110",
+            "reason": "Anti-Scam system."
+        },
+        {
+            "id": "746097472258048142",
+            "reason": "🎄ꔇ𝗞𝗶𝗿𝗮𝗠𝗼𝗿𝗮𝗱𝗼ꔈ☃#8556: (No reason specified)"
+        },
+        {
+            "id": "750315797548761169",
+            "reason": "Áxomy#5719: raid"
+        },
+        {
+            "id": "750448908215255110",
+            "reason": "gantrev#8819: posible doxxer y raider"
+        },
+        {
+            "id": "751922630633848893",
+            "reason": "Áxomy#4757: Spam de nitro falso al MD"
+        },
+        {
+            "id": "757984770209742979",
+            "reason": "Usuario peligroso (doxxeo a un miembro el servidor)"
+        },
+        {
+            "id": "760569859188195339",
+            "reason": "Áxomy#4391: Pedófilo asqueroso"
+        },
+        {
+            "id": "761002884963762239",
+            "reason": "Hacerle perder el tiempo al Staff en el servidor de apelaciones"
+        },
+        {
+            "id": "778483507122143272",
+            "reason": "Anti-Scam system."
+        },
+        {
+            "id": "782178940025700382",
+            "reason": "Áxomy#3187: Incumplimiento del artículo 3 de los guidelines de Discord y compartir información personal de un usuario externo al servidor."
+        },
+        {
+            "id": "784466242047574036",
+            "reason": "Áxomy#3407: sexualizacion de menores"
+        },
+        {
+            "id": "787766247974371339",
+            "reason": "Áxomy#4757: Phishing"
+        },
+        {
+            "id": "798645657530531841",
+            "reason": "1w Usuario problemático"
+        },
+        {
+            "id": "808422603865325581",
+            "reason": "le gantrev#6126: spamer <:para_tu:912954453034934323>"
+        },
+        {
+            "id": "817412693915992064",
+            "reason": "🎄ꔇ𝗞𝗶𝗿𝗮𝗠𝗼𝗿𝗮𝗱𝗼ꔈ☃#8556: (No reason specified)"
+        },
+        {
+            "id": "820491091916488704",
+            "reason": "L e m o ή#1234: Doxxeo"
+        },
+        {
+            "id": "826493023835652117",
+            "reason": "Áxomy#3407: Intento de raid"
+        },
+        {
+            "id": "835595162938769419",
+            "reason": "bot malicioso"
+        },
+        {
+            "id": "842906281840607242",
+            "reason": "Raid al servidor"
+        },
+        {
+            "id": "843344077927743498",
+            "reason": "le gantrev#6126: acusaciones de pedofilia"
+        },
+        {
+            "id": "847581461586509824",
+            "reason": "aiko 🍰#4122: link saca ip"
+        },
+        {
+            "id": "854250048393183237",
+            "reason": "Anti-Scam system."
+        },
+        {
+            "id": "858960070469353488",
+            "reason": "Áxomy#4757: Acoso al owner"
+        },
+        {
+            "id": "863849873500930048",
+            "reason": "Anti-Scam system."
+        },
+        {
+            "id": "879398644346933338",
+            "reason": "Anti-Scam system."
+        },
+        {
+            "id": "884533431877394492",
+            "reason": "intento de raid"
+        },
+        {
+            "id": "888465037650448404",
+            "reason": "Gore en general"
+        },
+        {
+            "id": "901522472250273902",
+            "reason": "Hacerle perder el tiempo al Staff con tickets de apelaciones."
+        },
+        {
+            "id": "905135995404562483",
+            "reason": "🎄ꔇ𝗞𝗶𝗿𝗮𝗠𝗼𝗿𝗮𝗱𝗼ꔈ☃#8556: (No reason specified)"
+        },
+        {
+            "id": "910576936978354216",
+            "reason": "Áxomy#4757: Hacerle perder el tiempo al Staff y ser muy molesto"
+        },
+        {
+            "id": "914099282385186827",
+            "reason": "gantrev#8819: link sospechoso de discord nitro"
+        },
+        {
+            "id": "914103019585560647",
+            "reason": "gantrev#8819: link falso de nitro classic"
+        },
+        {
+            "id": "923958808814977084",
+            "reason": "Áxomy#4757: Raid"
+        },
+        {
+            "id": "923960493213896754",
+            "reason": "Áxomy#4757: Raid"
+        },
+        {
+            "id": "924000353169571871",
+            "reason": "Áxomy#4757: Raid"
+        },
+        {
+            "id": "924002728492007444",
+            "reason": "Áxomy#4757: Raid"
+        },
+        {
+            "id": "924553187325775932",
+            "reason": "Áxomy#4757: Video de maltrato animal"
+        },
+        {
+            "id": "927225722873974845",
+            "reason": "!🎖Gabo🎖[🍰]#0001: Spam masivo md"
+        },
+        {
+            "id": "929857045673422868",
+            "reason": "Áxomy#3407: Acoso y doxxeo a un usuario del servidor"
+        },
+        {
+            "id": "984128951528071209",
+            "reason": "Phishing y scam"
+        }
+    ],
+    "emojis": [],
+    "members": [],
+    "createdTimestamp": 1665763988168,
+    "guildID": "774487850813095946",
+    "id": "1030513599627526147",
+    "iconBase64": "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",
+    "iconURL": "https://cdn.discordapp.com/icons/774487850813095946/a5eac93c827b175aed0ab1ff3a253c9a.webp",
+    "splashBase64": "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",
+    "splashURL": "https://cdn.discordapp.com/splashes/774487850813095946/6ad279ebbc5c0f308ad145b4be36a548.webp"
+}

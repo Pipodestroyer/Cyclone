@@ -1,0 +1,322 @@
+{
+    "name": "Cyclone's Test Garden",
+    "verificationLevel": 0,
+    "explicitContentFilter": 0,
+    "defaultMessageNotifications": 1,
+    "afk": null,
+    "widget": {
+        "enabled": null,
+        "channel": null
+    },
+    "channels": {
+        "categories": [
+            {
+                "name": "Text Channels",
+                "permissions": [
+                    {
+                        "roleName": "@everyone",
+                        "allow": "0",
+                        "deny": "1024"
+                    }
+                ],
+                "children": [
+                    {
+                        "type": 0,
+                        "name": "pruebas-generales",
+                        "nsfw": false,
+                        "rateLimitPerUser": 0,
+                        "parent": "Text Channels",
+                        "topic": null,
+                        "permissions": [
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "1024"
+                            }
+                        ],
+                        "messages": [
+                            {
+                                "username": "Cyclone",
+                                "avatar": "https://cdn.discordapp.com/avatars/911022283068436550/b8c6a51fc0bc28f0b99855b0c1aece93.webp",
+                                "content": "",
+                                "embeds": [
+                                    {
+                                        "type": "rich",
+                                        "description": "```Estamos preparando algunas cosas...```",
+                                        "color": 3092790,
+                                        "author": {
+                                            "name": "Pokita",
+                                            "icon_url": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                            "proxy_icon_url": "https://images-ext-1.discordapp.net/external/8svHuBMOEPOX1Hq9te--Znjehrt_eT_BYwv1bMI6NxQ/https/cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp"
+                                        }
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-26T21:49:47.671Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-26T01:43:10.783Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "perro hp le voy a raidear el servidor con el bot",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-26T01:42:51.183Z"
+                            },
+                            {
+                                "username": "Áxomy",
+                                "avatar": "https://cdn.discordapp.com/avatars/780938509363052597/ddcfe2c27686a4586724b6d26b272984.webp",
+                                "content": "yendo",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-26T01:42:46.685Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "md",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-26T01:42:35.120Z"
+                            },
+                            {
+                                "username": "DGAB",
+                                "avatar": "https://cdn.discordapp.com/avatars/936422224427089940/a_093bd28b7420ad210a6c5b2b195f60ec.gif",
+                                "content": "si",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-26T01:42:33.816Z"
+                            },
+                            {
+                                "username": "Áxomy",
+                                "avatar": "https://cdn.discordapp.com/avatars/780938509363052597/ddcfe2c27686a4586724b6d26b272984.webp",
+                                "content": "si?",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-26T01:42:27.566Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "@everyone #mañanaRelease1",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-26T01:41:57.625Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "#mañanaRelease1",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-26T01:41:54.641Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "mañana",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-26T01:41:40.193Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "@Áxomy Es oficial",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-26T01:41:36.885Z"
+                            },
+                            {
+                                "username": "Cyclone",
+                                "avatar": "https://cdn.discordapp.com/avatars/911022283068436550/b8c6a51fc0bc28f0b99855b0c1aece93.webp",
+                                "content": "",
+                                "embeds": [
+                                    {
+                                        "type": "rich",
+                                        "color": 3092790,
+                                        "fields": [
+                                            {
+                                                "name": "Codigo de la Copia de seguridad:",
+                                                "value": "```1034641822174941184```",
+                                                "inline": true
+                                            },
+                                            {
+                                                "name": "Tipo de Imagenes:",
+                                                "value": "```url```",
+                                                "inline": true
+                                            },
+                                            {
+                                                "name": "Mensajes por canal:",
+                                                "value": "```12```",
+                                                "inline": true
+                                            },
+                                            {
+                                                "name": "Uso:",
+                                                "value": "```Este codigo es usado para cargar la copia de seguridad.```",
+                                                "inline": true
+                                            },
+                                            {
+                                                "name": "No se guardo:",
+                                                "value": "```Todo el servidor fue guardado.```",
+                                                "inline": false
+                                            }
+                                        ],
+                                        "author": {
+                                            "name": "Pokita",
+                                            "icon_url": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                            "proxy_icon_url": "https://images-ext-1.discordapp.net/external/8svHuBMOEPOX1Hq9te--Znjehrt_eT_BYwv1bMI6NxQ/https/cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp"
+                                        },
+                                        "footer": {
+                                            "text": "Recuerda que puedes revisar todas las copias de seguridad con: /backuplist"
+                                        }
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-26T01:37:06.934Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "si",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-26T01:36:55.348Z"
+                            },
+                            {
+                                "username": "Cyclone",
+                                "avatar": "https://cdn.discordapp.com/avatars/1034641670404317205/cea29a989f9425ff7f4ba644aa5ab663.webp",
+                                "content": "",
+                                "embeds": [
+                                    {
+                                        "type": "rich",
+                                        "description": "```Estamos preparando algunas cosas...```",
+                                        "color": 3092790,
+                                        "author": {
+                                            "name": "Pokita",
+                                            "icon_url": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                            "proxy_icon_url": "https://images-ext-1.discordapp.net/external/8svHuBMOEPOX1Hq9te--Znjehrt_eT_BYwv1bMI6NxQ/https/cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp"
+                                        }
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-26T01:36:37.162Z"
+                            }
+                        ],
+                        "isNews": false,
+                        "threads": []
+                    }
+                ]
+            },
+            {
+                "name": "Voice Channels",
+                "permissions": [],
+                "children": []
+            }
+        ],
+        "others": []
+    },
+    "roles": [
+        {
+            "name": "Desarrollador - 1",
+            "color": "#3498db",
+            "hoist": true,
+            "permissions": "1071698660937",
+            "mentionable": false,
+            "position": 8,
+            "isEveryone": false
+        },
+        {
+            "name": "Cyclone - Stable",
+            "color": "#e91e63",
+            "hoist": true,
+            "permissions": "1071698660929",
+            "mentionable": false,
+            "position": 7,
+            "isEveryone": false
+        },
+        {
+            "name": "Desarrollador - 1",
+            "color": "#3498db",
+            "hoist": true,
+            "permissions": "1071698660937",
+            "mentionable": false,
+            "position": 5,
+            "isEveryone": false
+        },
+        {
+            "name": "Cyclone - Stable",
+            "color": "#e91e63",
+            "hoist": true,
+            "permissions": "1071698660929",
+            "mentionable": false,
+            "position": 4,
+            "isEveryone": false
+        },
+        {
+            "name": "Desarrollador - 1",
+            "color": "#3498db",
+            "hoist": true,
+            "permissions": "1071698660937",
+            "mentionable": false,
+            "position": 3,
+            "isEveryone": false
+        },
+        {
+            "name": "Cyclone - Stable",
+            "color": "#e91e63",
+            "hoist": true,
+            "permissions": "1071698660929",
+            "mentionable": false,
+            "position": 2,
+            "isEveryone": false
+        },
+        {
+            "name": "Tester - 1",
+            "color": "#9b59b6",
+            "hoist": true,
+            "permissions": "1071698660937",
+            "mentionable": false,
+            "position": 1,
+            "isEveryone": false
+        },
+        {
+            "name": "@everyone",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "1071698660929",
+            "mentionable": false,
+            "position": 0,
+            "isEveryone": true
+        }
+    ],
+    "bans": [],
+    "emojis": [],
+    "members": [],
+    "createdTimestamp": 1666820987347,
+    "guildID": "1034241743467589634",
+    "id": "1034946975511875584",
+    "iconBase64": "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",
+    "iconURL": "https://cdn.discordapp.com/icons/1034241743467589634/625eb86ff78c2f5e4ece0cd227f11f0b.webp"
+}

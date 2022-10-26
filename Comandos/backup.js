@@ -1,64 +1,103 @@
-const { SlashCommandBuilder } = require("@discordjs/builders")
-const { MessageEmbed } = require("discord.js")
-const Discord = require("discord.js")
-const backup = require("discord-backup");
-backup.setStorageFolder(__dirname+"/backups/");
-const { Permissions } = require('discord.js')
+const { SlashCommandBuilder } = require("discord.js")
+const { EmbedBuilder } = require("discord.js")
+const backup = require("discordio-backup");
+const { PermissionsBitField, IntentsBitField } = require('discord.js')
+const { awaitMessages } = require('discord.js');
+const { config } = require("dotenv");
+config.env
+const { Client, GatewayIntentBits } = require('discord.js');
+const client = new Client({ intents: [GatewayIntentBits.Guilds] });
+const fastFolderSizeSync = require('fast-folder-size/sync')
+const fs = require('node:fs');
 
-module.exports = { //esto es nescesario, es lo que necesita slashcommands.js para poner la info de tu comando
-    
-    
-
+module.exports = {
+  
     data: new SlashCommandBuilder()
-    .setName("backup") // nombre del slash
-    .setDescription("Hace una copia de seguridad."), //descripcion
-
-    async run(client, interaction, message){ //va asta aqui luego de esta linea empieza tu codigo.
+	.setName('backup')
+	.setDescription('Testing')
+	.addSubcommand(subcommand =>
+		subcommand
+			.setName('create')
+			.setDescription('Crea un backup solo para la guild actual.')
+            .addStringOption(option => option.setName("mensajes")
+            .setDescription("Cantidad de mensajes por canal.")
+                 .setRequired(true))
+   
+       .addStringOption(option => option.setName("imagenes")
+             .setDescription("Tipo de guardado de imagen.")
+                .setRequired(true).addChoices(
+           { name: 'Base64', value: 'base64' },
+           { name: 'Url', value: 'url' },
+       )
+       )
+       .addStringOption(option => option.setName("canales")
+             .setDescription("¿Se deben de guardar los canales?.")
+                .setRequired(true).addChoices(
+           { name: 'si', value: 'null' },
+           { name: 'no', value: 'channels' },
+       )
+       )
+       .addStringOption(option => option.setName("emojis")
+             .setDescription("¿Se deben de guardar los emojis?.")
+                .setRequired(true).addChoices(
+           { name: 'si', value: 'null' },
+           { name: 'no', value: 'emojis' },
+       )
+       )
+       .addStringOption(option => option.setName("bans")
+             .setDescription("¿Se deben de guardar los bans?.")
+                .setRequired(true).addChoices(
+           { name: 'si', value: 'null' },
+           { name: 'no', value: 'bans' },
+       )
+       )
+       .addStringOption(option => option.setName("roles")
+             .setDescription("¿Se deben de guardar los roles?.")
+                .setRequired(true).addChoices(
+           { name: 'si', value: 'null' },
+           { name: 'no', value: 'roles' },
+       ))
+       )
+	.addSubcommand(subcommand =>
+		subcommand
+			.setName('delete')
+			.setDescription('Elimina un backup del servidor.')
+            .addStringOption(option => option.setName("backup").setDescription("Id del Backup que se va a Borrar.").setRequired(true))
+     .addStringOption(option => option.setName("codigo")
+            .setDescription("Codigo de seguridad proporcionado por el propietadio de el servidor.")
+                 .setRequired(true))
+                 .addStringOption(option => option.setName("limpiar")
+            .setDescription("¿Se deben de eliminar todas las copias de seguridad? (solo disponible para propietario del servidor)")
+                 .setRequired(false).addChoices(
+                  { name: 'si', value: 'si' },
+                  { name: 'no', value: 'no' },
+              ))
+    )
+    .addSubcommand(subcommand =>
+                subcommand
+                    .setName('list')
+                    .setDescription('Lista de copias de seguridad.'))
+    .addSubcommand(subcommand =>
+                subcommand
+                    .setName('load')
+                    .setDescription('Carga un backup asociado al servidor.')
+                    .addStringOption(option => option.setName("backup").setDescription("Id del Backup que se va a Cargar.").setRequired(true))
+     .addStringOption(option => option.setName("codigo")
+            .setDescription("Codigo de seguridad proporcionado por el propietadio de el servidor.")
+                 .setRequired(true))
+                 .addStringOption(option => option.setName("limpiar")
+            .setDescription("¿Se debe de limpiar todo el servidor antes de cargar el backup? [Por defecto: NO]")
+                 .setRequired(false).addChoices(
+                  { name: 'si', value: 'true' },
+                  { name: 'no', value: 'null' },
+              )))
+    .addSubcommand(subcommand =>
+                        subcommand
+                            .setName('information')
+                            .setDescription('Informacion sobre un backup en especifico.')
+                            .addStringOption(option => option.setName("backup").setDescription("Id del Backup que se va a revisar informacion.").setRequired(true))),
+    
+    
+   
         
-        let Autor = interaction.member
-
-        let Permisos = Autor.permissions.has(Permissions.FLAGS.ADMINISTRATOR)
-
-        const user = client.users.cache.get(interaction.member.user.id);
-
-
-
-        const missingperms = new MessageEmbed()
-        .setAuthor({ name: `${user.username}`, iconURL: interaction.member.displayAvatarURL({ dynamic: true })})
-        .setColor("#2F3136")
-        .setDescription("```No tienes los permisos necesarios para usar este comando.```");
-
-        const think = new MessageEmbed()
-        .setAuthor({ name: `${user.username}`, iconURL: interaction.member.displayAvatarURL({ dynamic: true })})
-        .setColor("#2F3136")
-        .setDescription("```Generando el Backup...```");
-
-        const rest = new MessageEmbed()
-        .setAuthor({ name: `${user.username}`, iconURL: interaction.member.displayAvatarURL({ dynamic: true })})
-        .setColor("#2F3136")
-        .setDescription("```El bot no cuenta con los permisos de Administrador para hacer esto.```");
-
-        if (!Permisos){
-          return interaction.reply({
-          embeds: [missingperms], ephemeral: true
-          });
-        } else 
-        interaction.reply({ embeds:[think], ephemeral: false})
-        
-        backup.create(interaction.guild, {
-            jsonBeautify: true,
-            saveImages: "base64",
-            maxMessagesPerChannel: 3
-        }).then((backupData) => {
-
-        const answerbasic = new MessageEmbed()
-        .setAuthor({ name: `${user.username}`, iconURL: interaction.member.displayAvatarURL({ dynamic: true })})
-        .setColor("#2F3136")
-        .setDescription("```Backup: "+backupData.id+"```");
-
-       interaction.editReply({ embeds: [answerbasic], ephemeral: false })
-        });
-
-    } //termina aqui
-
-}
+    }

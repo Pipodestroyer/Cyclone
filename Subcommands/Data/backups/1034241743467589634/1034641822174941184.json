@@ -1,0 +1,182 @@
+{
+    "name": "Cyclone's Test Garden",
+    "verificationLevel": 0,
+    "explicitContentFilter": 0,
+    "defaultMessageNotifications": 1,
+    "afk": null,
+    "widget": {
+        "enabled": false,
+        "channel": null
+    },
+    "channels": {
+        "categories": [
+            {
+                "name": "Text Channels",
+                "permissions": [
+                    {
+                        "roleName": "@everyone",
+                        "allow": "0",
+                        "deny": "1024"
+                    }
+                ],
+                "children": [
+                    {
+                        "type": 0,
+                        "name": "pruebas-generales",
+                        "nsfw": false,
+                        "rateLimitPerUser": 0,
+                        "parent": "Text Channels",
+                        "topic": null,
+                        "permissions": [
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "1024"
+                            }
+                        ],
+                        "messages": [
+                            {
+                                "username": "Cyclone",
+                                "avatar": "https://cdn.discordapp.com/avatars/911022283068436550/b8c6a51fc0bc28f0b99855b0c1aece93.webp",
+                                "content": "",
+                                "embeds": [
+                                    {
+                                        "type": "rich",
+                                        "description": "```Estamos preparando algunas cosas...```",
+                                        "color": 3092790,
+                                        "author": {
+                                            "name": "Pokita",
+                                            "icon_url": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                            "proxy_icon_url": "https://images-ext-1.discordapp.net/external/8svHuBMOEPOX1Hq9te--Znjehrt_eT_BYwv1bMI6NxQ/https/cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp"
+                                        }
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-26T01:37:06.934Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "si",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-26T01:36:55.348Z"
+                            },
+                            {
+                                "username": "Cyclone",
+                                "avatar": "https://cdn.discordapp.com/avatars/1034641670404317205/cea29a989f9425ff7f4ba644aa5ab663.webp",
+                                "content": "",
+                                "embeds": [
+                                    {
+                                        "type": "rich",
+                                        "description": "```Estamos preparando algunas cosas...```",
+                                        "color": 3092790,
+                                        "author": {
+                                            "name": "Pokita",
+                                            "icon_url": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                            "proxy_icon_url": "https://images-ext-1.discordapp.net/external/8svHuBMOEPOX1Hq9te--Znjehrt_eT_BYwv1bMI6NxQ/https/cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp"
+                                        }
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-26T01:36:37.162Z"
+                            }
+                        ],
+                        "isNews": false,
+                        "threads": []
+                    }
+                ]
+            },
+            {
+                "name": "Voice Channels",
+                "permissions": [],
+                "children": []
+            }
+        ],
+        "others": []
+    },
+    "roles": [
+        {
+            "name": "Desarrollador - 1",
+            "color": "#3498db",
+            "hoist": true,
+            "permissions": "1071698660937",
+            "mentionable": false,
+            "position": 8,
+            "isEveryone": false
+        },
+        {
+            "name": "Cyclone - Stable",
+            "color": "#e91e63",
+            "hoist": true,
+            "permissions": "1071698660929",
+            "mentionable": false,
+            "position": 7,
+            "isEveryone": false
+        },
+        {
+            "name": "Desarrollador - 1",
+            "color": "#3498db",
+            "hoist": true,
+            "permissions": "1071698660937",
+            "mentionable": false,
+            "position": 5,
+            "isEveryone": false
+        },
+        {
+            "name": "Cyclone - Stable",
+            "color": "#e91e63",
+            "hoist": true,
+            "permissions": "1071698660929",
+            "mentionable": false,
+            "position": 4,
+            "isEveryone": false
+        },
+        {
+            "name": "Desarrollador - 1",
+            "color": "#3498db",
+            "hoist": true,
+            "permissions": "1071698660937",
+            "mentionable": false,
+            "position": 3,
+            "isEveryone": false
+        },
+        {
+            "name": "Cyclone - Stable",
+            "color": "#e91e63",
+            "hoist": true,
+            "permissions": "1071698660929",
+            "mentionable": false,
+            "position": 2,
+            "isEveryone": false
+        },
+        {
+            "name": "Tester - 1",
+            "color": "#9b59b6",
+            "hoist": true,
+            "permissions": "1071698660937",
+            "mentionable": false,
+            "position": 1,
+            "isEveryone": false
+        },
+        {
+            "name": "@everyone",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "1071698660929",
+            "mentionable": false,
+            "position": 0,
+            "isEveryone": true
+        }
+    ],
+    "bans": [],
+    "emojis": [],
+    "members": [],
+    "createdTimestamp": 1666748233122,
+    "guildID": "1034241743467589634",
+    "id": "1034641822174941184",
+    "iconURL": "https://cdn.discordapp.com/icons/1034241743467589634/3b6eb405d5f1dd9f28cc8a402bf76a2c.webp"
+}

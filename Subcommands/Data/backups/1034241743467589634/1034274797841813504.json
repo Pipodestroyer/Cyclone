@@ -1,0 +1,1407 @@
+{
+    "name": "Cyclone's Test Garden",
+    "verificationLevel": 0,
+    "explicitContentFilter": 0,
+    "defaultMessageNotifications": 0,
+    "afk": null,
+    "widget": {
+        "enabled": null,
+        "channel": null
+    },
+    "channels": {
+        "categories": [
+            {
+                "name": "Text Channels",
+                "permissions": [
+                    {
+                        "roleName": "@everyone",
+                        "allow": "0",
+                        "deny": "1024"
+                    }
+                ],
+                "children": [
+                    {
+                        "type": 0,
+                        "name": "pruebas-generales",
+                        "nsfw": false,
+                        "rateLimitPerUser": 0,
+                        "parent": "Text Channels",
+                        "topic": null,
+                        "permissions": [
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "1024"
+                            }
+                        ],
+                        "messages": [
+                            {
+                                "username": "Cyclone",
+                                "avatar": "https://cdn.discordapp.com/avatars/911022283068436550/b8c6a51fc0bc28f0b99855b0c1aece93.webp",
+                                "content": "",
+                                "embeds": [
+                                    {
+                                        "type": "rich",
+                                        "description": "```Estamos preparando algunas cosas...```",
+                                        "color": 3092790,
+                                        "author": {
+                                            "name": "Pokita",
+                                            "icon_url": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                            "proxy_icon_url": "https://images-ext-1.discordapp.net/external/8svHuBMOEPOX1Hq9te--Znjehrt_eT_BYwv1bMI6NxQ/https/cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp"
+                                        }
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T01:18:42.374Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "las acabo de limpiar",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T01:18:27.421Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "listo",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T01:18:24.420Z"
+                            },
+                            {
+                                "username": "Cyclone",
+                                "avatar": "https://cdn.discordapp.com/avatars/911022283068436550/b8c6a51fc0bc28f0b99855b0c1aece93.webp",
+                                "content": "",
+                                "embeds": [
+                                    {
+                                        "type": "rich",
+                                        "description": "```Este servidor no tiene ninguna copia de seguridad.```",
+                                        "color": 3092790,
+                                        "author": {
+                                            "name": "Pokita",
+                                            "icon_url": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                            "proxy_icon_url": "https://images-ext-1.discordapp.net/external/8svHuBMOEPOX1Hq9te--Znjehrt_eT_BYwv1bMI6NxQ/https/cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp"
+                                        }
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T01:18:22.256Z"
+                            },
+                            {
+                                "username": "Áxomy",
+                                "avatar": "https://cdn.discordapp.com/avatars/780938509363052597/ddcfe2c27686a4586724b6d26b272984.webp",
+                                "content": "entonces",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T01:18:17.199Z"
+                            },
+                            {
+                                "username": "Áxomy",
+                                "avatar": "https://cdn.discordapp.com/avatars/780938509363052597/ddcfe2c27686a4586724b6d26b272984.webp",
+                                "content": "a ver",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T01:18:15.314Z"
+                            },
+                            {
+                                "username": "Áxomy",
+                                "avatar": "https://cdn.discordapp.com/avatars/780938509363052597/ddcfe2c27686a4586724b6d26b272984.webp",
+                                "content": "epico",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T01:18:14.129Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "mira",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T01:17:38.351Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "mira",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T01:17:37.173Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "mira",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T01:17:35.867Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "@Cyclone's Beta Tester",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T01:17:34.520Z"
+                            },
+                            {
+                                "username": "Cyclone",
+                                "avatar": "https://cdn.discordapp.com/avatars/911022283068436550/b8c6a51fc0bc28f0b99855b0c1aece93.webp",
+                                "content": "",
+                                "embeds": [
+                                    {
+                                        "type": "rich",
+                                        "description": "```El servidor llego al limite de 5 copias de seguridad, elimina una para poder continuar.```",
+                                        "color": 3092790,
+                                        "author": {
+                                            "name": "Pokita",
+                                            "icon_url": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                            "proxy_icon_url": "https://images-ext-1.discordapp.net/external/8svHuBMOEPOX1Hq9te--Znjehrt_eT_BYwv1bMI6NxQ/https/cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp"
+                                        }
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T01:17:30.230Z"
+                            },
+                            {
+                                "username": "Cyclone",
+                                "avatar": "https://cdn.discordapp.com/avatars/911022283068436550/b8c6a51fc0bc28f0b99855b0c1aece93.webp",
+                                "content": "",
+                                "embeds": [
+                                    {
+                                        "type": "rich",
+                                        "color": 3092790,
+                                        "fields": [
+                                            {
+                                                "name": "Cantidad de Backups:",
+                                                "value": "```5```",
+                                                "inline": true
+                                            },
+                                            {
+                                                "name": "Tamaño de los Backups:",
+                                                "value": "```0.278MB```",
+                                                "inline": true
+                                            },
+                                            {
+                                                "name": "Todas las copias de seguridad:",
+                                                "value": "```1034258802972561408,1034274106150752256,1034274135544434689,1034274165235912706,1034274201776689155```",
+                                                "inline": false
+                                            }
+                                        ],
+                                        "author": {
+                                            "name": "Pokita",
+                                            "icon_url": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                            "proxy_icon_url": "https://images-ext-1.discordapp.net/external/8svHuBMOEPOX1Hq9te--Znjehrt_eT_BYwv1bMI6NxQ/https/cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp"
+                                        }
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T01:16:59.605Z"
+                            },
+                            {
+                                "username": "Cyclone",
+                                "avatar": "https://cdn.discordapp.com/avatars/911022283068436550/b8c6a51fc0bc28f0b99855b0c1aece93.webp",
+                                "content": "",
+                                "embeds": [
+                                    {
+                                        "type": "rich",
+                                        "color": 3092790,
+                                        "fields": [
+                                            {
+                                                "name": "Cantidad de Backups:",
+                                                "value": "```5```",
+                                                "inline": true
+                                            },
+                                            {
+                                                "name": "Tamaño de los Backups:",
+                                                "value": "```0.278MB```",
+                                                "inline": true
+                                            },
+                                            {
+                                                "name": "Todas las copias de seguridad:",
+                                                "value": "```1034258802972561408,1034274106150752256,1034274135544434689,1034274165235912706,1034274201776689155```",
+                                                "inline": false
+                                            }
+                                        ],
+                                        "author": {
+                                            "name": "Pokita",
+                                            "icon_url": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                            "proxy_icon_url": "https://images-ext-1.discordapp.net/external/8svHuBMOEPOX1Hq9te--Znjehrt_eT_BYwv1bMI6NxQ/https/cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp"
+                                        }
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T01:16:33.183Z"
+                            },
+                            {
+                                "username": "Cyclone",
+                                "avatar": "https://cdn.discordapp.com/avatars/911022283068436550/b8c6a51fc0bc28f0b99855b0c1aece93.webp",
+                                "content": "",
+                                "embeds": [
+                                    {
+                                        "type": "rich",
+                                        "color": 3092790,
+                                        "fields": [
+                                            {
+                                                "name": "Codigo de la Copia de seguridad:",
+                                                "value": "```1034274201776689155```",
+                                                "inline": true
+                                            },
+                                            {
+                                                "name": "Tipo de Imagenes:",
+                                                "value": "```url```",
+                                                "inline": true
+                                            },
+                                            {
+                                                "name": "Mensajes por canal:",
+                                                "value": "```12```",
+                                                "inline": true
+                                            },
+                                            {
+                                                "name": "Uso:",
+                                                "value": "```Este codigo es usado para cargar la copia de seguridad.```",
+                                                "inline": true
+                                            },
+                                            {
+                                                "name": "No se guardo:",
+                                                "value": "```channels```",
+                                                "inline": false
+                                            }
+                                        ],
+                                        "author": {
+                                            "name": "Pokita",
+                                            "icon_url": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                            "proxy_icon_url": "https://images-ext-1.discordapp.net/external/8svHuBMOEPOX1Hq9te--Znjehrt_eT_BYwv1bMI6NxQ/https/cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp"
+                                        },
+                                        "footer": {
+                                            "text": "Recuerda que puedes revisar todas las copias de seguridad con: /backuplist"
+                                        }
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T01:16:20.282Z"
+                            },
+                            {
+                                "username": "Cyclone",
+                                "avatar": "https://cdn.discordapp.com/avatars/911022283068436550/b8c6a51fc0bc28f0b99855b0c1aece93.webp",
+                                "content": "",
+                                "embeds": [
+                                    {
+                                        "type": "rich",
+                                        "color": 3092790,
+                                        "fields": [
+                                            {
+                                                "name": "Codigo de la Copia de seguridad:",
+                                                "value": "```1034274165235912706```",
+                                                "inline": true
+                                            },
+                                            {
+                                                "name": "Tipo de Imagenes:",
+                                                "value": "```url```",
+                                                "inline": true
+                                            },
+                                            {
+                                                "name": "Mensajes por canal:",
+                                                "value": "```12```",
+                                                "inline": true
+                                            },
+                                            {
+                                                "name": "Uso:",
+                                                "value": "```Este codigo es usado para cargar la copia de seguridad.```",
+                                                "inline": true
+                                            },
+                                            {
+                                                "name": "No se guardo:",
+                                                "value": "```Todo el servidor fue guardado.```",
+                                                "inline": false
+                                            }
+                                        ],
+                                        "author": {
+                                            "name": "Pokita",
+                                            "icon_url": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                            "proxy_icon_url": "https://images-ext-1.discordapp.net/external/8svHuBMOEPOX1Hq9te--Znjehrt_eT_BYwv1bMI6NxQ/https/cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp"
+                                        },
+                                        "footer": {
+                                            "text": "Recuerda que puedes revisar todas las copias de seguridad con: /backuplist"
+                                        }
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T01:16:11.575Z"
+                            },
+                            {
+                                "username": "Cyclone",
+                                "avatar": "https://cdn.discordapp.com/avatars/911022283068436550/b8c6a51fc0bc28f0b99855b0c1aece93.webp",
+                                "content": "",
+                                "embeds": [
+                                    {
+                                        "type": "rich",
+                                        "color": 3092790,
+                                        "fields": [
+                                            {
+                                                "name": "Codigo de la Copia de seguridad:",
+                                                "value": "```1034274135544434689```",
+                                                "inline": true
+                                            },
+                                            {
+                                                "name": "Tipo de Imagenes:",
+                                                "value": "```base64```",
+                                                "inline": true
+                                            },
+                                            {
+                                                "name": "Mensajes por canal:",
+                                                "value": "```12```",
+                                                "inline": true
+                                            },
+                                            {
+                                                "name": "Uso:",
+                                                "value": "```Este codigo es usado para cargar la copia de seguridad.```",
+                                                "inline": true
+                                            },
+                                            {
+                                                "name": "No se guardo:",
+                                                "value": "```Todo el servidor fue guardado.```",
+                                                "inline": false
+                                            }
+                                        ],
+                                        "author": {
+                                            "name": "Pokita",
+                                            "icon_url": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                            "proxy_icon_url": "https://images-ext-1.discordapp.net/external/8svHuBMOEPOX1Hq9te--Znjehrt_eT_BYwv1bMI6NxQ/https/cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp"
+                                        },
+                                        "footer": {
+                                            "text": "Recuerda que puedes revisar todas las copias de seguridad con: /backuplist"
+                                        }
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T01:16:04.495Z"
+                            },
+                            {
+                                "username": "Cyclone",
+                                "avatar": "https://cdn.discordapp.com/avatars/911022283068436550/b8c6a51fc0bc28f0b99855b0c1aece93.webp",
+                                "content": "",
+                                "embeds": [
+                                    {
+                                        "type": "rich",
+                                        "color": 3092790,
+                                        "fields": [
+                                            {
+                                                "name": "Codigo de la Copia de seguridad:",
+                                                "value": "```1034274106150752256```",
+                                                "inline": true
+                                            },
+                                            {
+                                                "name": "Tipo de Imagenes:",
+                                                "value": "```base64```",
+                                                "inline": true
+                                            },
+                                            {
+                                                "name": "Mensajes por canal:",
+                                                "value": "```12```",
+                                                "inline": true
+                                            },
+                                            {
+                                                "name": "Uso:",
+                                                "value": "```Este codigo es usado para cargar la copia de seguridad.```",
+                                                "inline": true
+                                            },
+                                            {
+                                                "name": "No se guardo:",
+                                                "value": "```Todo el servidor fue guardado.```",
+                                                "inline": false
+                                            }
+                                        ],
+                                        "author": {
+                                            "name": "Pokita",
+                                            "icon_url": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                            "proxy_icon_url": "https://images-ext-1.discordapp.net/external/8svHuBMOEPOX1Hq9te--Znjehrt_eT_BYwv1bMI6NxQ/https/cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp"
+                                        },
+                                        "footer": {
+                                            "text": "Recuerda que puedes revisar todas las copias de seguridad con: /backuplist"
+                                        }
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T01:15:57.469Z"
+                            },
+                            {
+                                "username": "Cyclone",
+                                "avatar": "https://cdn.discordapp.com/avatars/911022283068436550/b8c6a51fc0bc28f0b99855b0c1aece93.webp",
+                                "content": "",
+                                "embeds": [
+                                    {
+                                        "type": "rich",
+                                        "color": 3092790,
+                                        "fields": [
+                                            {
+                                                "name": "Cantidad de Backups:",
+                                                "value": "```1```",
+                                                "inline": true
+                                            },
+                                            {
+                                                "name": "Tamaño de los Backups:",
+                                                "value": "```0.064MB```",
+                                                "inline": true
+                                            },
+                                            {
+                                                "name": "Todas las copias de seguridad:",
+                                                "value": "```1034258802972561408```",
+                                                "inline": false
+                                            }
+                                        ],
+                                        "author": {
+                                            "name": "Pokita",
+                                            "icon_url": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                            "proxy_icon_url": "https://images-ext-1.discordapp.net/external/8svHuBMOEPOX1Hq9te--Znjehrt_eT_BYwv1bMI6NxQ/https/cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp"
+                                        }
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T01:13:37.013Z"
+                            },
+                            {
+                                "username": "Áxomy",
+                                "avatar": "https://cdn.discordapp.com/avatars/780938509363052597/ddcfe2c27686a4586724b6d26b272984.webp",
+                                "content": "https://canary.discord.com/channels/1034241743467589634/1034241744402907210",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:59:40.054Z"
+                            },
+                            {
+                                "username": "Áxomy",
+                                "avatar": "https://cdn.discordapp.com/avatars/780938509363052597/ddcfe2c27686a4586724b6d26b272984.webp",
+                                "content": "y de que sirve eso o que",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:59:28.408Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "Non - Disclosure - Agreement",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:58:54.275Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "@Cyclone's Beta Tester Muestra todas las onfiguraciones de tu cliente",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:58:41.053Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "<:SW_Sus:892945824949100604>",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:58:28.886Z"
+                            },
+                            {
+                                "username": "Áxomy",
+                                "avatar": "https://cdn.discordapp.com/avatars/780938509363052597/ddcfe2c27686a4586724b6d26b272984.webp",
+                                "content": "que",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:58:25.512Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "cierto?",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:58:20.325Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "No sea que tienes un NDA",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:58:14.523Z"
+                            },
+                            {
+                                "username": "Áxomy",
+                                "avatar": "https://cdn.discordapp.com/avatars/780938509363052597/ddcfe2c27686a4586724b6d26b272984.webp",
+                                "content": "q",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:58:12.999Z"
+                            },
+                            {
+                                "username": "Áxomy",
+                                "avatar": "https://cdn.discordapp.com/avatars/780938509363052597/ddcfe2c27686a4586724b6d26b272984.webp",
+                                "content": "me descubriste el betterdiscord",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:57:56.041Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "1034258802972561408",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:57:51.064Z"
+                            },
+                            {
+                                "username": "Áxomy",
+                                "avatar": "https://cdn.discordapp.com/avatars/780938509363052597/ddcfe2c27686a4586724b6d26b272984.webp",
+                                "content": "en esto",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:57:29.710Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:57:27.794Z"
+                            },
+                            {
+                                "username": "Áxomy",
+                                "avatar": "https://cdn.discordapp.com/avatars/780938509363052597/ddcfe2c27686a4586724b6d26b272984.webp",
+                                "content": "si",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:57:26.658Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "el codigo?",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:57:15.770Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "ah y tambien porque hay un circulo rojo al lado de el nombre de cyclone",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:57:06.963Z"
+                            },
+                            {
+                                "username": "Áxomy",
+                                "avatar": "https://cdn.discordapp.com/avatars/780938509363052597/ddcfe2c27686a4586724b6d26b272984.webp",
+                                "content": "\"1\"?",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:56:34.054Z"
+                            },
+                            {
+                                "username": "Áxomy",
+                                "avatar": "https://cdn.discordapp.com/avatars/780938509363052597/ddcfe2c27686a4586724b6d26b272984.webp",
+                                "content": "ya pero que pongo",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:56:32.197Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "ahi tienes",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:56:11.704Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "@Cyclone's Beta Tester",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:56:07.333Z"
+                            },
+                            {
+                                "username": "Cyclone",
+                                "avatar": "https://cdn.discordapp.com/avatars/911022283068436550/b8c6a51fc0bc28f0b99855b0c1aece93.webp",
+                                "content": "",
+                                "embeds": [
+                                    {
+                                        "type": "rich",
+                                        "color": 3092790,
+                                        "fields": [
+                                            {
+                                                "name": "Cantidad de Backups:",
+                                                "value": "```1```",
+                                                "inline": true
+                                            },
+                                            {
+                                                "name": "Tamaño de los Backups:",
+                                                "value": "```0.064MB```",
+                                                "inline": true
+                                            },
+                                            {
+                                                "name": "Todas las copias de seguridad:",
+                                                "value": "```1034258802972561408```",
+                                                "inline": false
+                                            }
+                                        ],
+                                        "author": {
+                                            "name": "Pokita",
+                                            "icon_url": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                            "proxy_icon_url": "https://images-ext-1.discordapp.net/external/8svHuBMOEPOX1Hq9te--Znjehrt_eT_BYwv1bMI6NxQ/https/cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp"
+                                        }
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:56:00.633Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "ahora no existen los comandos de clcy",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:55:41.765Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "odio que discord tenga lag",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:55:18.702Z"
+                            },
+                            {
+                                "username": "Áxomy",
+                                "avatar": "https://cdn.discordapp.com/avatars/780938509363052597/ddcfe2c27686a4586724b6d26b272984.webp",
+                                "content": "como obtengo el codigo del backup",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:54:53.491Z"
+                            },
+                            {
+                                "username": "Áxomy",
+                                "avatar": "https://cdn.discordapp.com/avatars/780938509363052597/ddcfe2c27686a4586724b6d26b272984.webp",
+                                "content": "quiero deletear un backup",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:54:49.387Z"
+                            },
+                            {
+                                "username": "Áxomy",
+                                "avatar": "https://cdn.discordapp.com/avatars/780938509363052597/ddcfe2c27686a4586724b6d26b272984.webp",
+                                "content": "pro",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:54:41.676Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "osea no tienen archivos de codigo",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:54:37.622Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "asi esta porque no existe esos comandos",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:54:31.999Z"
+                            },
+                            {
+                                "username": "Áxomy",
+                                "avatar": "https://cdn.discordapp.com/avatars/780938509363052597/ddcfe2c27686a4586724b6d26b272984.webp",
+                                "content": "simplemente me gusta",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:54:23.830Z"
+                            },
+                            {
+                                "username": "Áxomy",
+                                "avatar": "https://cdn.discordapp.com/avatars/780938509363052597/ddcfe2c27686a4586724b6d26b272984.webp",
+                                "content": "no me reproches eso",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:54:20.093Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "2",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:54:17.300Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "PORQUE EN BLANCO",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:54:12.687Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "1",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:54:06.321Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "2 cosas",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:54:00.544Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:53:50.462Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "el bot esta en spanglish",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:53:42.459Z"
+                            },
+                            {
+                                "username": "Cyclone",
+                                "avatar": "https://cdn.discordapp.com/avatars/911022283068436550/b8c6a51fc0bc28f0b99855b0c1aece93.webp",
+                                "content": "",
+                                "embeds": [
+                                    {
+                                        "type": "rich",
+                                        "color": 3092790,
+                                        "fields": [
+                                            {
+                                                "name": "Cantidad de Backups:",
+                                                "value": "```1```",
+                                                "inline": true
+                                            },
+                                            {
+                                                "name": "Tamaño de los Backups:",
+                                                "value": "```0.064MB```",
+                                                "inline": true
+                                            },
+                                            {
+                                                "name": "Todas las copias de seguridad:",
+                                                "value": "```1034258802972561408```",
+                                                "inline": false
+                                            }
+                                        ],
+                                        "author": {
+                                            "name": "Áxomy",
+                                            "icon_url": "https://cdn.discordapp.com/avatars/780938509363052597/ddcfe2c27686a4586724b6d26b272984.webp",
+                                            "proxy_icon_url": "https://images-ext-2.discordapp.net/external/_5wmYlO3dqi0cRYyqCGXJoqeRocoJFyL9cnBez-8BdQ/https/cdn.discordapp.com/avatars/780938509363052597/ddcfe2c27686a4586724b6d26b272984.webp"
+                                        }
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:53:22.617Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "lol",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:53:22.458Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "no se puede",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:53:21.597Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "ehh",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:52:53.606Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "eso no tenia que pasar",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:52:50.928Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "la otra seria pasarte 10k lineas de codigo",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:52:24.604Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "mejor lo hago yo",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:52:15.336Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "claro",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:52:12.920Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "si",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:52:11.233Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "ehh",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:52:10.574Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "no se",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:52:08.039Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "no",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:52:04.201Z"
+                            },
+                            {
+                                "username": "Áxomy",
+                                "avatar": "https://cdn.discordapp.com/avatars/780938509363052597/ddcfe2c27686a4586724b6d26b272984.webp",
+                                "content": "a ver cuales son",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:51:59.039Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "Hazlo",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:51:54.310Z"
+                            },
+                            {
+                                "username": "Áxomy",
+                                "avatar": "https://cdn.discordapp.com/avatars/780938509363052597/ddcfe2c27686a4586724b6d26b272984.webp",
+                                "content": "mas facil",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:51:50.886Z"
+                            },
+                            {
+                                "username": "Áxomy",
+                                "avatar": "https://cdn.discordapp.com/avatars/780938509363052597/ddcfe2c27686a4586724b6d26b272984.webp",
+                                "content": "y si te ayudo a escribir los textos y los pegas y ya",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:51:48.215Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:51:37.453Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "y me vienes a reclamar por una tilde",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:51:34.557Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "ni puedo terminar todavia el codigo porque no tengo tiempo",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:51:27.874Z"
+                            },
+                            {
+                                "username": "Áxomy",
+                                "avatar": "https://cdn.discordapp.com/avatars/780938509363052597/ddcfe2c27686a4586724b6d26b272984.webp",
+                                "content": "escribe bien 🔪",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:51:21.865Z"
+                            },
+                            {
+                                "username": "Áxomy",
+                                "avatar": "https://cdn.discordapp.com/avatars/780938509363052597/ddcfe2c27686a4586724b6d26b272984.webp",
+                                "content": "vos",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:51:14.250Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "Stfu man",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:51:09.674Z"
+                            },
+                            {
+                                "username": "Áxomy",
+                                "avatar": "https://cdn.discordapp.com/avatars/780938509363052597/ddcfe2c27686a4586724b6d26b272984.webp",
+                                "content": "me da una hernia ver que el bot tiene una ortografía escasa",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:51:01.679Z"
+                            },
+                            {
+                                "username": "Cyclone",
+                                "avatar": "https://cdn.discordapp.com/avatars/911022283068436550/b8c6a51fc0bc28f0b99855b0c1aece93.webp",
+                                "content": "",
+                                "embeds": [
+                                    {
+                                        "type": "rich",
+                                        "description": "```Pong!🏓 Latencia actual: 5319ms. | 🛠️ La latencia de la API es: 110ms```",
+                                        "color": 3092790,
+                                        "author": {
+                                            "name": "Pokita",
+                                            "icon_url": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                            "proxy_icon_url": "https://images-ext-1.discordapp.net/external/8svHuBMOEPOX1Hq9te--Znjehrt_eT_BYwv1bMI6NxQ/https/cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp"
+                                        }
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:50:33.958Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "q",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:50:30.768Z"
+                            },
+                            {
+                                "username": "Áxomy",
+                                "avatar": "https://cdn.discordapp.com/avatars/780938509363052597/ddcfe2c27686a4586724b6d26b272984.webp",
+                                "content": "en toda la configuracion de cyclone",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:50:25.785Z"
+                            },
+                            {
+                                "username": "Áxomy",
+                                "avatar": "https://cdn.discordapp.com/avatars/780938509363052597/ddcfe2c27686a4586724b6d26b272984.webp",
+                                "content": "acabo de ver un error grandisimo",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:50:20.101Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "fucking aweasome",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:41:25.038Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "@Cyclone's Beta Tester take a look at that",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:41:08.567Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "https://tenor.com/view/byuntear-sad-sad-cat-cat-meme-gif-25617057",
+                                "embeds": [
+                                    {
+                                        "type": "gifv",
+                                        "url": "https://tenor.com/view/byuntear-sad-sad-cat-cat-meme-gif-25617057",
+                                        "provider": {
+                                            "name": "Tenor",
+                                            "url": "https://tenor.co"
+                                        },
+                                        "thumbnail": {
+                                            "url": "https://media.tenor.com/NQfq1liFH-8AAAAD/byuntear-sad.png",
+                                            "proxy_url": "https://images-ext-2.discordapp.net/external/fdI-LrkzaZ5Otc5Pgq0JkLfTHlzw_X1h_uEt3hzCJAQ/https/media.tenor.com/NQfq1liFH-8AAAAD/byuntear-sad.png",
+                                            "width": 640,
+                                            "height": 640
+                                        },
+                                        "video": {
+                                            "url": "https://media.tenor.com/NQfq1liFH-8AAAPo/byuntear-sad.mp4",
+                                            "width": 640,
+                                            "height": 640,
+                                            "proxy_url": "https://images-ext-2.discordapp.net/external/8X27MnNd_25W4S5omOdH1eo8xAoSe68xzmujoE_cRM8/https/media.tenor.com/NQfq1liFH-8AAAPo/byuntear-sad.mp4"
+                                        }
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:39:10.867Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "no sin fallas porque como voy a sacarlo si no se pueden cargar los backups",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:39:07.635Z"
+                            },
+                            {
+                                "username": "Áxomy",
+                                "avatar": "https://cdn.discordapp.com/avatars/780938509363052597/ddcfe2c27686a4586724b6d26b272984.webp",
+                                "content": "sin fallas?",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:38:05.402Z"
+                            },
+                            {
+                                "username": "Áxomy",
+                                "avatar": "https://cdn.discordapp.com/avatars/780938509363052597/ddcfe2c27686a4586724b6d26b272984.webp",
+                                "content": "o sea que si se puede sacar la stable ?",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:38:02.054Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "todo esta funcionando relativamente bien",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:37:21.610Z"
+                            },
+                            {
+                                "username": "Áxomy",
+                                "avatar": "https://cdn.discordapp.com/avatars/780938509363052597/ddcfe2c27686a4586724b6d26b272984.webp",
+                                "content": "no lo niego",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:36:59.677Z"
+                            },
+                            {
+                                "username": "Áxomy",
+                                "avatar": "https://cdn.discordapp.com/avatars/780938509363052597/ddcfe2c27686a4586724b6d26b272984.webp",
+                                "content": "me gusto, si",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:36:54.162Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "<:TCProto_Love:939071496075247636>",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:36:50.727Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "",
+                                "embeds": [],
+                                "files": [
+                                    {
+                                        "name": "unknown.png",
+                                        "attachment": "https://cdn.discordapp.com/attachments/1034241744402907209/1034274733715361842/unknown.png"
+                                    }
+                                ],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T01:18:32.418Z"
+                            },
+                            {
+                                "username": "Áxomy",
+                                "avatar": "https://cdn.discordapp.com/avatars/780938509363052597/ddcfe2c27686a4586724b6d26b272984.webp",
+                                "content": "",
+                                "embeds": [],
+                                "files": [
+                                    {
+                                        "name": "unknown.png",
+                                        "attachment": "https://cdn.discordapp.com/attachments/1034241744402907209/1034269475807166504/unknown.png"
+                                    }
+                                ],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:57:38.842Z"
+                            },
+                            {
+                                "username": "Áxomy",
+                                "avatar": "https://cdn.discordapp.com/avatars/780938509363052597/ddcfe2c27686a4586724b6d26b272984.webp",
+                                "content": "jaja yo si",
+                                "embeds": [],
+                                "files": [
+                                    {
+                                        "name": "unknown.png",
+                                        "attachment": "https://cdn.discordapp.com/attachments/1034241744402907209/1034269139285577829/unknown.png"
+                                    }
+                                ],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:56:18.716Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "",
+                                "embeds": [],
+                                "files": [
+                                    {
+                                        "name": "unknown.png",
+                                        "attachment": "https://cdn.discordapp.com/attachments/1034241744402907209/1034268952995565639/unknown.png"
+                                    }
+                                ],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:55:34.302Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "",
+                                "embeds": [],
+                                "files": [
+                                    {
+                                        "name": "unknown.png",
+                                        "attachment": "https://cdn.discordapp.com/attachments/1034241744402907209/1034268751039840256/unknown.png"
+                                    }
+                                ],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:54:46.162Z"
+                            },
+                            {
+                                "username": "Áxomy",
+                                "avatar": "https://cdn.discordapp.com/avatars/780938509363052597/ddcfe2c27686a4586724b6d26b272984.webp",
+                                "content": "",
+                                "embeds": [],
+                                "files": [
+                                    {
+                                        "name": "unknown.png",
+                                        "attachment": "https://cdn.discordapp.com/attachments/1034241744402907209/1034268508634226848/unknown.png"
+                                    }
+                                ],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:53:48.325Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "",
+                                "embeds": [],
+                                "files": [
+                                    {
+                                        "name": "unknown.png",
+                                        "attachment": "https://cdn.discordapp.com/attachments/1034241744402907209/1034267646662811728/unknown.png"
+                                    }
+                                ],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:50:22.819Z"
+                            },
+                            {
+                                "username": "Pokita",
+                                "avatar": "https://cdn.discordapp.com/avatars/356428292158390282/49e58b7a1d9d35957062dda8fe6750f5.webp",
+                                "content": "",
+                                "embeds": [],
+                                "files": [
+                                    {
+                                        "name": "unknown.png",
+                                        "attachment": "https://cdn.discordapp.com/attachments/1034241744402907209/1034265284833443871/unknown.png"
+                                    }
+                                ],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:40:59.705Z"
+                            }
+                        ],
+                        "isNews": false,
+                        "threads": []
+                    }
+                ]
+            },
+            {
+                "name": "Voice Channels",
+                "permissions": [],
+                "children": [
+                    {
+                        "type": 2,
+                        "name": "Silencio Axomy",
+                        "bitrate": 63688,
+                        "userLimit": 0,
+                        "parent": "Voice Channels",
+                        "permissions": []
+                    }
+                ]
+            }
+        ],
+        "others": []
+    },
+    "roles": [
+        {
+            "name": "Desarrollador - 1",
+            "color": "#3498db",
+            "hoist": true,
+            "permissions": "1071698660937",
+            "mentionable": false,
+            "position": 4,
+            "isEveryone": false
+        },
+        {
+            "name": "Cyclone - Stable",
+            "color": "#e91e63",
+            "hoist": true,
+            "permissions": "1071698660929",
+            "mentionable": false,
+            "position": 3,
+            "isEveryone": false
+        },
+        {
+            "name": "Tester - 1",
+            "color": "#9b59b6",
+            "hoist": true,
+            "permissions": "1071698660937",
+            "mentionable": false,
+            "position": 2,
+            "isEveryone": false
+        },
+        {
+            "name": "@everyone",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "1071698660929",
+            "mentionable": false,
+            "position": 0,
+            "isEveryone": true
+        }
+    ],
+    "bans": [],
+    "emojis": [],
+    "members": [],
+    "createdTimestamp": 1666660727702,
+    "guildID": "1034241743467589634",
+    "id": "1034274797841813504",
+    "iconBase64": "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",
+    "iconURL": "https://cdn.discordapp.com/icons/1034241743467589634/625eb86ff78c2f5e4ece0cd227f11f0b.webp"
+}
