@@ -89,7 +89,8 @@ module.exports = {
         .setDescription("```Todas las copias de seguridad se eliminaron correctamente.```")
 
         const missingperms = new EmbedBuilder()
-        .setColor("#c7b9b1")
+        .setAuthor({ name: `${user.username}`, iconURL: interaction.member.displayAvatarURL({ dynamic: true })})
+        .setColor("#2F3136")
         .setDescription("```No tienes los permisos necesarios para ejecutar este comando.```")
 
         const missingbcks = new EmbedBuilder()

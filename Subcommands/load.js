@@ -84,7 +84,8 @@ module.exports = {
         .setDescription("```llave incorrecta, El Backup no se cargara.```")
 
         const missingperms = new EmbedBuilder()
-        .setColor("#c7b9b1")
+        .setAuthor({ name: `${user.username}`, iconURL: interaction.member.displayAvatarURL({ dynamic: true })})
+        .setColor("#2F3136")
         .setDescription("```No tienes los permisos necesarios para ejecutar este comando.```")
 
         const missingbcks = new EmbedBuilder()
