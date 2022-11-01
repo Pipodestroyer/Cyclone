@@ -54,6 +54,14 @@ module.exports = { //esto es nescesario, es lo que necesita slashcommands.js par
 
         }
 
+        const user = client.users.cache.get(interaction.member.user.id);
+        let Permisos = Autor.permissions.has(PermissionsBitField.Flags.Administrator)
+        backup.setStorageFolder(__dirname+"/Data/backups"+`/${guildsave}/`);
+        if(!fs.existsSync(__dirname+"/Data/backups"+`/${guildsave}/`)){
+            fs.mkdirSync(`${guildsave}`)
+            
+        }
+
         const Exeso = new EmbedBuilder()
         .setAuthor({ name: `${userbeforechek.username}`, iconURL: interaction.member.displayAvatarURL({ dynamic: true })})
         .setColor("#2F3136")
@@ -90,14 +98,6 @@ module.exports = { //esto es nescesario, es lo que necesita slashcommands.js par
 
         if( 13 < mensajespercanal){
             return interaction.reply({ embeds: [overlimit], ephemeral: false })
-        }
-
-        const user = client.users.cache.get(interaction.member.user.id);
-        let Permisos = Autor.permissions.has(PermissionsBitField.Flags.Administrator)
-        backup.setStorageFolder(__dirname+"/Data/backups"+`/${guildsave}/`);
-        if(!fs.existsSync(__dirname+"/Data/backups"+`/${guildsave}/`)){
-            fs.mkdirSync(`${guildsave}`)
-            
         }
 
         const missingperms = new EmbedBuilder()

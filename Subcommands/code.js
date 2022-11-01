@@ -92,8 +92,8 @@ module.exports = {
 
           interaction.reply({ embeds:[mensajeusuario], ephemeral: true})
 
-          const filter = i => {
-            return i.user.id === interaction.user.id;
+          const filter = interaction => {
+            return interaction.member.user.id === interaction.member.user.id;
           };
 
           interaction.channel.awaitMessages({filter, max: 1, time: 60000, errors: ['time'] }).then(collected => {
