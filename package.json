@@ -1,7 +1,7 @@
 {
   "name": "cyclone-stable-release",
   "version": "0.0.2",
-  "description": "CycloneBotForDiscord",
+  "description": "CycloneForDiscord",
   "main": "index.js",
   "scripts": {
     "test": "node index.js"
@@ -21,7 +21,6 @@
     "discordio-backup": "^1.0.5",
     "dotenv": "^16.0.3",
     "fast-folder-size": "^1.7.1",
-    "fs": "^0.0.1-security",
     "node-fetch": "^2.6.6"
   }
 }
