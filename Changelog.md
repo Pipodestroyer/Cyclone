@@ -1,7 +1,6 @@
 # Cyclone Changelog
-###### version 0.0.3
-
 # Changes
+###### version 0.0.3
 
 Ahora todas las embeds mostraran los comandos correctos al dar errores.
 
