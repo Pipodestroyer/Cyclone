@@ -18,7 +18,7 @@ module.exports = {
     subCommand: "configuration.code",
     
 
-    async run(client, interaction, message){
+    async run(client, interaction, message, process){
 
         let Autor = interaction.member
         let Permisos = Autor.permissions.has(PermissionsBitField.Flags.Administrator)
@@ -61,16 +61,10 @@ module.exports = {
         .setColor("#2F3136")
         .setDescription("```Este codigo exede los 12 caracteres maximos, no es valido.```");
 
-        try{
+  
 
         if(!interaction.guild.members.me.permissions.has(PermissionsBitField.Flags.Administrator)){
          return interaction.reply({ embeds:[botperms], ephemeral: false })
-        }}catch(err){
-
-          console.log(err);
-          user.send({embeds: [somethingwentbad], ephemeral: false })
-          return;
-
         }
         if (interaction.guild.ownerId !== interaction.member.user.id){
           return interaction.reply({
@@ -120,19 +114,39 @@ module.exports = {
             interaction.editReply({ embeds:[finalmente] , ephemeral: true })
 
           }).catch((err) => {
-            console.log(err)
             interaction.editReply({ embeds:[timeout]})
             fs.rmSync(__dirname+"/Data/ServerData"+`/${guildsave}/`, { recursive: true, force: true })
           });
           
 
        } else {
+
+        //
+        //Definiciones
+        //
+
+        const package = require("./package.json");
+        let version = package.version
         let keystring = fs.readFileSync(__dirname+"/Data/ServerData"+`/${guildsave}/${guildsave}.json`)
         const bytes = fastFolderSizeSync(__dirname+"/Data/backups"+`/${guildsave}/`)
         const sizeoffolder = fs.readdirSync(__dirname+"/Data/backups"+`/${guildsave}/`).length
+        let student = JSON.parse(keystring);
+        let keyending = student.codigo
+        var key = `${student.codigo}`
+        const filter = i => i.customId === 'owneroption';
+        const filtermessages = i => {
+          return i.user.id === interaction.user.id;
+        };
+        var caja = {
+          codigo:[]
+        }
+
+        //
+        //Component
+        //
+
         const opcionesowner = new ActionRowBuilder()
         .addComponents(
-
           new SelectMenuBuilder()
           .setCustomId('owneroption')
           .setPlaceholder('¿Que quieres hacer?')
@@ -143,22 +157,16 @@ module.exports = {
               value:"opcion_uno"
             },
           )
-
         );
 
-        let student = JSON.parse(keystring);
-
-        let keyending = student.codigo
-
-
+        //
+        //Embeds
+        //
+      
         const advicecode = new EmbedBuilder()
         .setAuthor({ name: `${user.username}`, iconURL: interaction.member.displayAvatarURL({ dynamic: true })})
         .setColor("#2F3136")
         .setDescription("```Escribe el nuevo codigo del servidor, tienes un maximo de 12 caracteres y 60s para enviar el codigo, todo mensaje tuyo apartir de ahora se guardara como el codigo.```")
-
-  
-        var key = `${student.codigo}`
-        const filter = i => i.customId === 'owneroption';
 
         const codigosiexiste = new EmbedBuilder()
         .setAuthor({ name: `Bienvenido Denuevo ${interaction.member.user.tag}`, iconURL: interaction.member.displayAvatarURL({ dynamic: true })})
@@ -170,52 +178,52 @@ module.exports = {
 
           { name: "Cantidad de copias de seguridad:", value: "```" + `${sizeoffolder}/5` + "```", inline: true },
           )
-        .setFooter({ text:"Cyclone 1.0 DEMO "});
+        .setFooter({ text:`Running ${version}ver. `});
 
-        dashboard = await interaction.reply({ embeds:[codigosiexiste], components:[opcionesowner] ,ephemeral: true, fetchReply: true })
-        dashboard.awaitMessageComponent({ filter, max: 1, componentType: ComponentType.SelectMenu, time: 300000, errors: ['time'] }).then(interaction => {
-          const opcionuno = interaction.values
-          interaction.reply({ embeds:[advicecode], ephemeral:true })
-
-          const filtermessages = i => {
-            return i.user.id === interaction.user.id;
-          };
-
-          interaction.channel.awaitMessages({filtermessages, max: 1, time: 60000, errors: ['time'] }).then(collected => {
-            let changecode = collected.first().content
-            var caja = {
-              codigo:[
-    
-              ]
-            }
-            if(12 < changecode.length){
-              return collected.first().delete(), interaction.editReply({ embeds:[muylargo], ephemeral: true })
-            }
-            collected.first().delete()
-            caja.codigo.push(`${changecode}`);
-            var json = JSON.stringify(caja);
-            fs.unlinkSync(__dirname+"/Data/ServerData"+`/${guildsave}/${guildsave}.json`)
-            fs.writeFileSync(__dirname+"/Data/ServerData"+`/${guildsave}/${guildsave}.json`, json);
-            const finalmente = new EmbedBuilder()
+        const finalmente = new EmbedBuilder()
         .setAuthor({ name: `${user.username}`, iconURL: interaction.member.displayAvatarURL({ dynamic: true })})
         .setColor("#2F3136")
         .setDescription("```"+`Vale el nuevo codigo para este servidor sera: ${changecode} \nEl codigo se recomienda escribirlo en un papel y solo darselo a administradores de alta confianza.`+"```");
-            interaction.editReply({ embeds:[finalmente], ephemeral:true})
 
-       }).catch((err) =>{
-        console.log(err)
-        interaction.editReply({ emebeds:[timeout], ephemeral: true})
-       })
+        //
+        //Codigo
+        //
 
-        }
-          ).catch((err) =>{
+        dashboard = await interaction.reply({ embeds:[codigosiexiste], components:[opcionesowner] ,ephemeral: true, fetchReply: true })
+
+        dashboard.awaitMessageComponent({
+           filter,
+           max: 1, 
+           componentType: ComponentType.StringSelect, 
+           time: 300000, 
+           errors: ['time'] 
+          }).then(interaction => {
+          interaction.reply({ embeds:[advicecode], ephemeral:true })
+
+            interaction.channel.awaitMessages({filtermessages, max: 1, time: 60000, errors: ['time'] }).then(collected => {
+
+             let changecode = collected.first().content
+             if(12 < changecode.length){ return collected.first().delete(), interaction.editReply({ embeds:[muylargo], ephemeral: true }) }
+             collected.first().delete()
+             caja.codigo.push(`${changecode}`);
+             var json = JSON.stringify(caja);
+             fs.unlinkSync(__dirname+"/Data/ServerData"+`/${guildsave}/${guildsave}.json`)
+             fs.writeFileSync(__dirname+"/Data/ServerData"+`/${guildsave}/${guildsave}.json`, json);
+             interaction.editReply({ embeds:[finalmente], ephemeral:true})
+
+            }).catch((err) =>{
+
             console.log(err)
-          })
-      }
-       
+            interaction.editReply({ emebeds:[timeout], ephemeral: true})
 
-        
-        
+           })
+
+        }).catch((err) =>{
+
+          console.log(chalk.whiteBright.bgRedBright.bold("❌ | Error | Catched"))
+          console.log(chalk.whiteBright.bgRedBright(`${err}`))
+
+        })
     }
-
+  }
 }

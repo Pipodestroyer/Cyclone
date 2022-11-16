@@ -1,6 +1,6 @@
 {
   "name": "cyclone-stable-release",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "CycloneForDiscord",
   "main": "index.js",
   "scripts": {
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Pipodestroyer/Cyclone-stable#readme",
   "dependencies": {
+    "chalk": "^4.1.0",
     "discord.js": "^14.6.0",
     "discordio-backup": "^1.0.5",
     "dotenv": "^16.0.3",

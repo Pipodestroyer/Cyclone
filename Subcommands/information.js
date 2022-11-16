@@ -35,16 +35,10 @@ module.exports = {
         .setColor("#2F3136")
         .setDescription("```Algo parece estar mal, revisa si cyclone tiene permisos de administrador.```");
         
-        try{
+    
 
         if(!interaction.guild.members.me.permissions.has(PermissionsBitField.Flags.Administrator)){
          return interaction.reply({ embeds:[botperms], ephemeral: false })
-        }}catch(err){
-
-          console.log(err);
-          user.send({embeds: [somethingwentbad], ephemeral: false })
-          return;
-
         }
         const think = new EmbedBuilder()
         .setAuthor({ name: `${user.username}`, iconURL: interaction.member.displayAvatarURL({ dynamic: true })})

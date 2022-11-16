@@ -33,16 +33,10 @@ module.exports = {
         .setColor("#2F3136")
         .setDescription("```Algo parece estar mal, revisa si cyclone tiene permisos de administrador.```");
         
-        try{
+       
 
         if(!interaction.guild.members.me.permissions.has(PermissionsBitField.Flags.Administrator)){
          return interaction.reply({ embeds:[botperms], ephemeral: false })
-        }}catch(err){
-
-          console.log(err);
-          user.send({embeds: [somethingwentbad], ephemeral: false })
-          return;
-
         }
 
         const Code404 = new EmbedBuilder()
@@ -70,7 +64,6 @@ module.exports = {
         .setColor("#2F3136")
         .setDescription("```Este servidor no tiene ninguna copia de seguridad.```");
 
-        console.log(guildsave)
         backup.setStorageFolder(__dirname+"/Data/backups"+`/${guildsave}/`);
 
         const backuplisting = __dirname+"/Data/backups"+`/${guildsave}/`
@@ -92,9 +85,6 @@ module.exports = {
        const sizeinmb = sizemb.size
 
        const bytes = fastFolderSizeSync(__dirname+"/Data/backups"+`/${guildsave}/`)
-
-       console.log(bytes)
- 
 
 
         if (!Permisos){

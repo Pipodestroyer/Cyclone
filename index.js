@@ -1,12 +1,14 @@
-const { Client, Collection, IntentsBitField, GatewayIntentBits, ActivityType } = require('discord.js');
+const { Client, Collection, IntentsBitField, GatewayIntentBits, ActivityType, EmbedBuilder } = require('discord.js');
 const client = new Client({ intents: [GatewayIntentBits.Guilds,
   GatewayIntentBits.GuildMessages,
   GatewayIntentBits.MessageContent,
   GatewayIntentBits.GuildMembers,] });
 require('dotenv').config();
+const chalk = require('chalk')
 
 const fs = require('fs');
 let { readdirSync } = require("fs");
+const process = require('process');
 
 function ClientPrescence(){
   client.user.setPresence({
@@ -19,10 +21,16 @@ function ClientPrescence(){
   })
 }
 
+const package = require("./package.json");
+let version = package.version
+
+
 client.once('ready', () => {
-  console.log(`Client logged in as ${client.user.tag}, logged in ${client. guilds. cache. size} servers. `);
-  console.log(`Cyclone id: ${client.user.id}`);
+  
+ console.log(chalk.whiteBright.bgBlueBright(`🔁 |Client logged in as ${client.user.tag} | logged in ${client. guilds. cache. size} servers. | Running ${version}ver.`));
   ClientPrescence();
+  console.log(chalk.whiteBright.bgGreenBright.bold("✅ | Index.js | Working As Intended."));
+
 });
 
 client.slashcommands = new Collection();
@@ -52,7 +60,7 @@ client.on("interactionCreate", async(interaction) => {
   if(subCommand){
    const subCommandFile = client.subCommands.get(`${interaction.commandName}.${subCommand}`);
 
-    subCommandFile.run(client, interaction)
+    subCommandFile.run(client, interaction, process)
   }
   } catch(e){
 
@@ -63,16 +71,47 @@ client.on("interactionCreate", async(interaction) => {
   try{
     await slashcmds.run(client, interaction)
   }catch(e) {
-    console.error(e)
+    console.log(chalk.whiteBright.bgYellowBright.bold("✴️ | Command Error | Catched "))
+    console.log(chalk.whiteBright.bgYellowBright(`${e} \n ${e.reason.message}`))
     interaction.reply({ content:"Algo salio mal, si eres un usuario porfavor contacta a Pokita#1234 inmediatamente.", ephemeral:true})
   }
-
 }
 })
+
+process.on('unhandledRejection' , (reason, promise) => {
+
+  console.log(chalk.whiteBright.bgRedBright.bold("❌ | Error | Catched | unhandledRejection"))
+  console.log(chalk.whiteBright.bgRedBright(`${reason} \n ${promise}`))
+
+})
+
+process.on('rejectionHandled' , (reason, promise) => {
+
+  console.log(chalk.whiteBright.bgHex('#ebff69').bold("⚠️ | Warning | Rejection | rejectionHandled"))
+  console.log(chalk.whiteBright.bgHex('#ebff69')(`${reason} \n ${promise}`))
+  
+})
+
+process.on('uncaughtException' , (err, origin) => {
+
+  console.log(chalk.whiteBright.bgRedBright.bold("❌ | Error | Catched | uncaughtException"))
+  console.log(chalk.whiteBright.bgRedBright(`${err} \n ${origin}`))
+
+})
+process.on('warning' , (warning) => {
+
+  console.log(chalk.whiteBright.bgMagentaBright.bold("🚨 | Warning | Node Warning"))
+  console.log(chalk.whiteBright.bgMagentaBright(`${warning.name} \n ${warning.message}`))
+
+})
+
 
 client.on('messageCreate', message => {
 
   //check if the mention requirments are correct.
+
+  let user = message.author
+
 if(message.mentions.everyone === true || message.mentions.here === true) {
   return;
 } else {
@@ -92,4 +131,3 @@ if(message.mentions.everyone === true || message.mentions.here === true) {
 //login
 
 client.login(process.env.discord_token);
-console.log("Todo esta funcionando correctamente.");
