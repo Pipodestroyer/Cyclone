@@ -10,21 +10,17 @@ const { Client, GatewayIntentBits } = require('discord.js');
 const { fdatasync, existsSync } = require("node:fs");
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 const fs = require('node:fs');
+const chalk = require('chalk');
 
 module.exports = { //esto es nescesario, es lo que necesita slashcommands.js para poner la info de tu comando
 
     subCommand: "backup.create",
 
-    async run(client, interaction, message){ //va asta aqui luego de esta linea empieza tu codigo.
+    async run(client, interaction, message, process){ //va asta aqui luego de esta linea empieza tu codigo.
         
         let Autor = interaction.member
-
-        
         const userbeforechek = client.users.cache.get(interaction.member.user.id);
         const guildsave = interaction.guild.id
-
-        console.log(userbeforechek.username)
-
         const mensajespercanal = interaction.options.getString('mensajes')
         const tipodeimagen = interaction.options.getString('imagenes')
         const canalessiono = interaction.options.getString('canales')
@@ -41,17 +37,9 @@ module.exports = { //esto es nescesario, es lo que necesita slashcommands.js par
         .setAuthor({ name: `${userbeforechek.username}`, iconURL: interaction.member.displayAvatarURL({ dynamic: true })})
         .setColor("#2F3136")
         .setDescription("```Algo parece estar mal, revisa si cyclone tiene permisos de administrador.```");
-        
-        try{
 
         if(!interaction.guild.members.me.permissions.has(PermissionsBitField.Flags.Administrator)){
          return interaction.reply({ embeds:[botperms], ephemeral: false })
-        }}catch(err){
-
-          console.log(err);
-          userbeforechek.send({embeds: [somethingwentbad], ephemeral: false })
-          return;
-
         }
 
         const user = client.users.cache.get(interaction.member.user.id);
@@ -75,7 +63,7 @@ module.exports = { //esto es nescesario, es lo que necesita slashcommands.js par
         const Code404 = new EmbedBuilder()
         .setAuthor({ name: `${userbeforechek.username}`, iconURL: interaction.member.displayAvatarURL({ dynamic: true })})
         .setColor("#2F3136")
-        .setDescription("```"+"Tienes que primero registrar un codigo con el comando "+"/codigo"+" antes de poder usar cyclone, solo el propietario puede hacer este registro.```");
+        .setDescription("```"+"Tienes que primero registrar un codigo con el comando "+"/configuration code"+" antes de poder usar cyclone, solo el propietario puede hacer este registro.```");
 
 
         if(!fs.existsSync(__dirname+"/Data/ServerData"+`/${guildsave}/`)){
@@ -139,7 +127,6 @@ module.exports = { //esto es nescesario, es lo que necesita slashcommands.js par
         } 
         await interaction.reply({ embeds:[think], ephemeral: false})
 
-      try{  
        await backup.create(interaction.guild, {
             jsonBeautify: true,
             saveImages: `${tipodeimagen}`,
@@ -157,17 +144,13 @@ module.exports = { //esto es nescesario, es lo que necesita slashcommands.js par
                 { name: "Uso:" , value: "```Este codigo es usado para cargar la copia de seguridad.```", inline: true },
                 { name: "No se guardo:" , value: "```"+`${matches_array}`+"```", inline: false },
                 )
-            .setFooter({ text: "Recuerda que puedes revisar todas las copias de seguridad con: /backuplist"})
-    
-            console.log(`The backup was succesful | guild: "${interaction.guild.name}" | Backup id: "${backupData.id}" | user: "${user.username}" |`)
+            .setFooter({ text: "Recuerda que puedes revisar todas las copias de seguridad con: /backup list"})
+
+            console.log(chalk.whiteBright.bgHex('#ebff69').bold("🚦 | New System Message"))
+            console.log(chalk.whiteBright.bgHex('#ebff69')(`The backup was succesful | guild: "${interaction.guild.name}" | Backup id: "${backupData.id}" | user: "${user.username}" `))
     
            interaction.editReply({ embeds: [answerbasic], ephemeral: false })
             })
-    }catch(err) {
-        userbeforechek({ embeds:[somethingwentbad], ephemeral: true })
-        console.error(err)
-
-    }
             
         
 
