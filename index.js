@@ -1,4 +1,4 @@
-const { Client, Collection, IntentsBitField, GatewayIntentBits, ActivityType, EmbedBuilder } = require('discord.js');
+const { Client, Collection, IntentsBitField, GatewayIntentBits, ActivityType, MessageType, EmbedBuilder } = require('discord.js');
 const client = new Client({ intents: [GatewayIntentBits.Guilds,
   GatewayIntentBits.GuildMessages,
   GatewayIntentBits.MessageContent,
@@ -14,12 +14,19 @@ function ClientPrescence(){
   client.user.setPresence({
     status: "STREAMING",
     activities: [{
-      name: "Making Backups",
+      name: "Run the command, we handle the rest.",
       type: ActivityType.Streaming,
       url: "https://www.twitch.tv/pipoxdretroyer"
     }]
   })
 }
+
+var estado = {
+  status:[]
+}
+
+console.log(estado.status)
+
 
 const package = require("./package.json");
 let version = package.version
@@ -27,9 +34,10 @@ let version = package.version
 
 client.once('ready', () => {
   
- console.log(chalk.whiteBright.bgBlueBright(`🔁 |Client logged in as ${client.user.tag} | logged in ${client. guilds. cache. size} servers. | Running ${version}ver.`));
+ console.log(chalk.whiteBright.bgBlueBright(`🔁 |Client logged in as ${client.user.tag} | logged in ${client. guilds. cache. size} servers. | Running v${version} Beta.`));
   ClientPrescence();
   console.log(chalk.whiteBright.bgGreenBright.bold("✅ | Index.js | Working As Intended."));
+  estado.status.push("ready")
 
 });
 
@@ -83,6 +91,15 @@ process.on('unhandledRejection' , (reason, promise) => {
   console.log(chalk.whiteBright.bgRedBright.bold("❌ | Error | Catched | unhandledRejection"))
   console.log(chalk.whiteBright.bgRedBright(`${reason} \n ${promise}`))
 
+  if(estado.status == "ready"){
+    console.log("Cliente listo a tiempo.")
+  } else {
+    await(10000);
+    if(estado.status == "ready"){
+      console.log("cliente listo.")
+    }
+  }
+
 })
 
 process.on('rejectionHandled' , (reason, promise) => {
@@ -116,17 +133,17 @@ if(message.mentions.everyone === true || message.mentions.here === true) {
   return;
 } else {
 
-  if(message.mentions.has(client.user.id) && message.type == 'REPLY') {
-    return;
-  } else {
-
+  if(!message.mentions.has(client.user.id) && MessageType.Reply){
+   return;
+  } 
 
  //warn
+
   if(message.mentions.has(client.user.id)) { 
     message.channel.send("Parece que es tu primera vez usando **Cyclone**, Cyclone esta hecho en base de slash commands `/`\nPara usarlos escribe `/` en el chat más el comando que quieres usar.")
   }
 
-}}});
+}});
 
 //login
 
