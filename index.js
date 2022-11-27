@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-const { Client, Collection, IntentsBitField, GatewayIntentBits, ActivityType, EmbedBuilder } = require('discord.js');
-=======
-const { Client, Collection, IntentsBitField, GatewayIntentBits, ActivityType, MessageType, EmbedBuilder, MessageMentions } = require('discord.js');
->>>>>>> Stashed changes
+const { Client, Collection, IntentsBitField, GatewayIntentBits, ActivityType, MessageType, EmbedBuilder } = require('discord.js');
 const client = new Client({ intents: [GatewayIntentBits.Guilds,
   GatewayIntentBits.GuildMessages,
   GatewayIntentBits.MessageContent,
@@ -18,38 +14,30 @@ function ClientPrescence(){
   client.user.setPresence({
     status: "STREAMING",
     activities: [{
-      name: "Making Backups",
+      name: "Run the command, we handle the rest.",
       type: ActivityType.Streaming,
       url: "https://www.twitch.tv/pipoxdretroyer"
     }]
   })
 }
 
-<<<<<<< Updated upstream
-=======
 var estado = {
   status:[]
 }
 
->>>>>>> Stashed changes
+console.log(estado.status)
+
+
 const package = require("./package.json");
 let version = package.version
-let branch = package.branch
 
 
 client.once('ready', () => {
   
-<<<<<<< Updated upstream
- console.log(chalk.whiteBright.bgBlueBright(`🔁 |Client logged in as ${client.user.tag} | logged in ${client. guilds. cache. size} servers. | Running ${version}ver.`));
-  ClientPrescence();
-  console.log(chalk.whiteBright.bgGreenBright.bold("✅ | Index.js | Working As Intended."));
-=======
- console.log(chalk.whiteBright.bgBlueBright(`🔁 |Client logged in as ${client.user.tag} | logged in ${client. guilds. cache. size} servers. | Running v${version} ${branch}.`));
+ console.log(chalk.whiteBright.bgBlueBright(`🔁 |Client logged in as ${client.user.tag} | logged in ${client. guilds. cache. size} servers. | Running v${version} Beta.`));
   ClientPrescence();
   console.log(chalk.whiteBright.bgGreenBright.bold("✅ | Index.js | Working As Intended."));
   estado.status.push("ready")
-  console.log(chalk.whiteBright.bgGreenBright.bold("✅ | Client Status: Ready."));
->>>>>>> Stashed changes
 
 });
 
@@ -103,6 +91,15 @@ process.on('unhandledRejection' , (reason, promise) => {
   console.log(chalk.whiteBright.bgRedBright.bold("❌ | Error | Catched | unhandledRejection"))
   console.log(chalk.whiteBright.bgRedBright(`${reason} \n ${promise}`))
 
+  if(estado.status == "ready"){
+    console.log("Cliente listo a tiempo.")
+  } else {
+    await(10000);
+    if(estado.status == "ready"){
+      console.log("cliente listo.")
+    }
+  }
+
 })
 
 process.on('rejectionHandled' , (reason, promise) => {
@@ -115,7 +112,7 @@ process.on('rejectionHandled' , (reason, promise) => {
 process.on('uncaughtException' , (err, origin) => {
 
   console.log(chalk.whiteBright.bgRedBright.bold("❌ | Error | Catched | uncaughtException"))
-  console.log(chalk.whiteBright.bgRedBright(`${err} \n ${err.message}`))
+  console.log(chalk.whiteBright.bgRedBright(`${err} \n ${origin}`))
 
 })
 process.on('warning' , (warning) => {
@@ -135,27 +132,18 @@ client.on('messageCreate', message => {
 if(message.mentions.everyone === true || message.mentions.here === true) {
   return;
 } else {
-<<<<<<< Updated upstream
 
-  if(message.mentions.has(client.user.id) && message.type == 'REPLY') {
-    return;
-  } else {
-
-
- //warn
-  if(message.mentions.has(client.user.id)) { 
-=======
- //warn
   if(message.content !== "<@911022283068436550>"){
-    return; 
-  }
+   return;
+  } 
 
-  if(message.mentions.has(client.user.id)) {
->>>>>>> Stashed changes
+ //warn
+
+  if(message.mentions.has(client.user.id)) { 
     message.channel.send("Parece que es tu primera vez usando **Cyclone**, Cyclone esta hecho en base de slash commands `/`\nPara usarlos escribe `/` en el chat más el comando que quieres usar.")
   }
 
-}}});
+}});
 
 //login
 
