@@ -179,7 +179,7 @@ module.exports = {
 
           { name: "Cantidad de copias de seguridad:", value: "```" + `${sizeoffolder}/5` + "```", inline: true },
           )
-        .setFooter({ text:`Running v${version} ${branch}. `});
+        .setFooter({ text:`Running v${version}-${branch}. `});
 
         const finalmente = new EmbedBuilder()
         .setAuthor({ name: `${user.username}`, iconURL: interaction.member.displayAvatarURL({ dynamic: true })})

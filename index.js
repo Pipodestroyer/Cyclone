@@ -25,16 +25,15 @@ var estado = {
   status:[]
 }
 
-console.log(estado.status)
-
 
 const package = require("./package.json");
 let version = package.version
+let branch = package.branch
 
 
 client.once('ready', () => {
   
- console.log(chalk.whiteBright.bgBlueBright(`🔁 |Client logged in as ${client.user.tag} | logged in ${client. guilds. cache. size} servers. | Running v${version} Beta.`));
+ console.log(chalk.whiteBright.bgBlueBright(`🔁 |Client logged in as ${client.user.tag} | logged in ${client. guilds. cache. size} servers. | Running v${version}-${branch}.`));
   ClientPrescence();
   console.log(chalk.whiteBright.bgGreenBright.bold("✅ | Index.js | Working As Intended."));
   estado.status.push("ready")
@@ -90,15 +89,6 @@ process.on('unhandledRejection' , (reason, promise) => {
 
   console.log(chalk.whiteBright.bgRedBright.bold("❌ | Error | Catched | unhandledRejection"))
   console.log(chalk.whiteBright.bgRedBright(`${reason} \n ${promise}`))
-
-  if(estado.status == "ready"){
-    console.log("Cliente listo a tiempo.")
-  } else {
-    await(10000);
-    if(estado.status == "ready"){
-      console.log("cliente listo.")
-    }
-  }
 
 })
 

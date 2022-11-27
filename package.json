@@ -1,7 +1,7 @@
 {
   "name": "cyclone-stable-release",
   "version": "0.0.3",
-  "branch":"Beta",
+  "branch":"Alpha",
   "description": "CycloneForDiscord",
   "main": "index.js",
   "scripts": {
