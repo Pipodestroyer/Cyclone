@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 const { Client, Collection, IntentsBitField, GatewayIntentBits, ActivityType, EmbedBuilder } = require('discord.js');
+=======
+const { Client, Collection, IntentsBitField, GatewayIntentBits, ActivityType, MessageType, EmbedBuilder, MessageMentions } = require('discord.js');
+>>>>>>> Stashed changes
 const client = new Client({ intents: [GatewayIntentBits.Guilds,
   GatewayIntentBits.GuildMessages,
   GatewayIntentBits.MessageContent,
@@ -21,15 +25,31 @@ function ClientPrescence(){
   })
 }
 
+<<<<<<< Updated upstream
+=======
+var estado = {
+  status:[]
+}
+
+>>>>>>> Stashed changes
 const package = require("./package.json");
 let version = package.version
+let branch = package.branch
 
 
 client.once('ready', () => {
   
+<<<<<<< Updated upstream
  console.log(chalk.whiteBright.bgBlueBright(`🔁 |Client logged in as ${client.user.tag} | logged in ${client. guilds. cache. size} servers. | Running ${version}ver.`));
   ClientPrescence();
   console.log(chalk.whiteBright.bgGreenBright.bold("✅ | Index.js | Working As Intended."));
+=======
+ console.log(chalk.whiteBright.bgBlueBright(`🔁 |Client logged in as ${client.user.tag} | logged in ${client. guilds. cache. size} servers. | Running v${version} ${branch}.`));
+  ClientPrescence();
+  console.log(chalk.whiteBright.bgGreenBright.bold("✅ | Index.js | Working As Intended."));
+  estado.status.push("ready")
+  console.log(chalk.whiteBright.bgGreenBright.bold("✅ | Client Status: Ready."));
+>>>>>>> Stashed changes
 
 });
 
@@ -95,7 +115,7 @@ process.on('rejectionHandled' , (reason, promise) => {
 process.on('uncaughtException' , (err, origin) => {
 
   console.log(chalk.whiteBright.bgRedBright.bold("❌ | Error | Catched | uncaughtException"))
-  console.log(chalk.whiteBright.bgRedBright(`${err} \n ${origin}`))
+  console.log(chalk.whiteBright.bgRedBright(`${err} \n ${err.message}`))
 
 })
 process.on('warning' , (warning) => {
@@ -115,6 +135,7 @@ client.on('messageCreate', message => {
 if(message.mentions.everyone === true || message.mentions.here === true) {
   return;
 } else {
+<<<<<<< Updated upstream
 
   if(message.mentions.has(client.user.id) && message.type == 'REPLY') {
     return;
@@ -123,6 +144,14 @@ if(message.mentions.everyone === true || message.mentions.here === true) {
 
  //warn
   if(message.mentions.has(client.user.id)) { 
+=======
+ //warn
+  if(message.content !== "<@911022283068436550>"){
+    return; 
+  }
+
+  if(message.mentions.has(client.user.id)) {
+>>>>>>> Stashed changes
     message.channel.send("Parece que es tu primera vez usando **Cyclone**, Cyclone esta hecho en base de slash commands `/`\nPara usarlos escribe `/` en el chat más el comando que quieres usar.")
   }
 

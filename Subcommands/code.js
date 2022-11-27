@@ -127,6 +127,7 @@ module.exports = {
 
         const package = require("./package.json");
         let version = package.version
+        let branch = package.branch
         let keystring = fs.readFileSync(__dirname+"/Data/ServerData"+`/${guildsave}/${guildsave}.json`)
         const bytes = fastFolderSizeSync(__dirname+"/Data/backups"+`/${guildsave}/`)
         const sizeoffolder = fs.readdirSync(__dirname+"/Data/backups"+`/${guildsave}/`).length
@@ -178,7 +179,7 @@ module.exports = {
 
           { name: "Cantidad de copias de seguridad:", value: "```" + `${sizeoffolder}/5` + "```", inline: true },
           )
-        .setFooter({ text:`Running ${version}ver. `});
+        .setFooter({ text:`Running v${version} ${branch}. `});
 
         const finalmente = new EmbedBuilder()
         .setAuthor({ name: `${user.username}`, iconURL: interaction.member.displayAvatarURL({ dynamic: true })})
