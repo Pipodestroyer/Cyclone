@@ -9,15 +9,15 @@ const { PermissionsBitField, IntentsBitField } = require('discord.js')
 const { Client, GatewayIntentBits } = require('discord.js');
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
-module.exports = { //esto es nescesario, es lo que necesita slashcommands.js para poner la info de tu comando
+module.exports = { //este comando esta solo para funciones de desarrollo no deberia de estar para cuando v.0.1.0 este lista.
     
     
 
     data: new SlashCommandBuilder()
-    .setName("ping") // nombre del slash
+    .setName("ping")
     .setDescription("Tiempo de respuesta del sevidor en ms."),
 
-    async run(client, interaction, message){ //va asta aqui luego de esta linea empieza tu codigo.
+    async run(client, interaction, message){ //por alguna razon la latencia actual esta dando valores negativos, seria bueno hecharle un vistazo a eso.
         
         let Autor = interaction.member
 
@@ -29,7 +29,7 @@ module.exports = { //esto es nescesario, es lo que necesita slashcommands.js par
 
         const errorchecknan = new EmbedBuilder()
         .setAuthor({ name: `${userbeforechek.username}`, iconURL: interaction.member.displayAvatarURL({ dynamic: true })})
-        .setColor("#2F3136")
+        .setColor("#2b2d31")
         .setDescription("```"+`Pong!🏓 Latencia actual: ${Date.now() - interaction.createdTimestamp}ms. | 🛠️ La latencia de la API es: ${Math.round(client.ws.ping)}ms`+"```");  
 
         interaction.reply({ embeds: [errorchecknan], ephemeral: false })

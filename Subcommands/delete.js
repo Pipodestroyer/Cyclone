@@ -14,6 +14,7 @@ module.exports = {
     
 
     async run( client, interaction, message ){
+      //el nombre de este subcomando aun puede ser arreglado y quizas combinado con la dashboard, posiblemente sea descontinuado.
 
       // Definitions
 

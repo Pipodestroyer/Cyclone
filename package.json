@@ -1,11 +1,11 @@
 {
   "name": "cyclone-stable-release",
-  "version": "0.0.3",
-  "branch":"Alpha",
+  "version": "0.0.4",
+  "branch": "Alpha",
   "description": "CycloneForDiscord",
-  "main": "index.js",
+  "main": "core.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "node core.js"
   },
   "repository": {
     "type": "git",
@@ -19,10 +19,10 @@
   "homepage": "https://github.com/Pipodestroyer/Cyclone-stable#readme",
   "dependencies": {
     "chalk": "^4.1.0",
-    "discord.js": "^14.6.0",
-    "discordio-backup": "^1.0.5",
-    "dotenv": "^16.0.3",
-    "fast-folder-size": "^1.7.1",
-    "node-fetch": "^2.6.6"
+    "discord.js": "^14.16.3",
+    "discordio-backup": "^1.0.6",
+    "dotenv": "^16.4.7",
+    "fast-folder-size": "^2.3.0",
+    "node-fetch": "^2.7.0"
   }
 }

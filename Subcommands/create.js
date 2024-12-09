@@ -12,11 +12,11 @@ const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 const fs = require('node:fs');
 const chalk = require('chalk');
 
-module.exports = { //esto es nescesario, es lo que necesita slashcommands.js para poner la info de tu comando
+module.exports = { //este comando requiere una renovacion de sus fields.
 
     subCommand: "backup.create",
 
-    async run(client, interaction, message, process){ //va asta aqui luego de esta linea empieza tu codigo.
+    async run(client, interaction, message, process){ //sera bueno organizar las constantes.
         
         let Autor = interaction.member
         const userbeforechek = client.users.cache.get(interaction.member.user.id);
@@ -145,6 +145,8 @@ module.exports = { //esto es nescesario, es lo que necesita slashcommands.js par
                 { name: "No se guardo:" , value: "```"+`${matches_array}`+"```", inline: false },
                 )
             .setFooter({ text: "Recuerda que puedes revisar todas las copias de seguridad con: /backup list"})
+
+            //por privacdad esto sera eliminado en produccion, esto solo esta para asegurarse que las copias de seguridad si se esten creando y si tengan las propiedades correctas.
 
             console.log(chalk.whiteBright.bgHex('#ebff69').bold("🚦 | New System Message"))
             console.log(chalk.whiteBright.bgHex('#ebff69')(`The backup was succesful | guild: "${interaction.guild.name}" | Backup id: "${backupData.id}" | user: "${user.username}" `))

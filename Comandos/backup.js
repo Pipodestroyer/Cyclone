@@ -11,6 +11,7 @@ const fastFolderSizeSync = require('fast-folder-size/sync')
 const fs = require('node:fs');
 
 module.exports = {
+    //todos los subcomandos y quizas el comando principal necesitan que les cambie el nombre.
   
     data: new SlashCommandBuilder()
 	.setName('backup')

@@ -14,7 +14,7 @@ module.exports = {
    subCommand: "backup.list",
     
 
-    async run(client, interaction, message){
+    async run(client, interaction, message){ //faltan muchas mejoras  a este comando.
 
         let Autor = interaction.member
         let Permisos = Autor.permissions.has(PermissionsBitField.Flags.Administrator)

@@ -8,7 +8,7 @@ const fs = require('node:fs');
 const commands = [];
 const commandFiles = fs.readdirSync('./Comandos').filter(file => file.endsWith('.js'));
 
-// Place your client and guild ids here
+//Codigo de youtube pero sive, cuando aprenda rest, quizas haga esto mas comodo de usar, no tengo ni idea que hace pero hey, de que funciona, lo hace.
 const clientId = '911022283068436550';
 
 for (const file of commandFiles) {

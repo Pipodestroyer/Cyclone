@@ -13,7 +13,7 @@ module.exports = {
       subCommand:"backup.load",
     
 
-    async run( client, interaction, message ){
+    async run( client, interaction, message ){ //este codigo mayormente es funcional, no hay nada necesario de añadir.
 
       // Definitions
 

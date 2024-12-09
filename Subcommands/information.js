@@ -15,6 +15,7 @@ module.exports = {
     
 
     async run(client, interaction, message){
+      //pronto este comando quedara descontinuado, no se debe tomar mas de lo obligatoriamente necesario de estos datos.
 
         let Autor = interaction.member
         let Permisos = Autor.permissions.has(PermissionsBitField.Flags.Administrator)
@@ -27,12 +28,12 @@ module.exports = {
 
         const botperms = new EmbedBuilder()
         .setAuthor({ name: `${user.username}`, iconURL: interaction.member.displayAvatarURL({ dynamic: true })})
-        .setColor("#2F3136")
+        .setColor("#2b2d31")
         .setDescription("```Cyclone requiere de permisos de administrador para funcionar.```");
 
         const somethingwentbad = new EmbedBuilder()
         .setAuthor({ name: `${user.username}`, iconURL: interaction.member.displayAvatarURL({ dynamic: true })})
-        .setColor("#2F3136")
+        .setColor("#2b2d31")
         .setDescription("```Algo parece estar mal, revisa si cyclone tiene permisos de administrador.```");
         
     
@@ -42,15 +43,15 @@ module.exports = {
         }
         const think = new EmbedBuilder()
         .setAuthor({ name: `${user.username}`, iconURL: interaction.member.displayAvatarURL({ dynamic: true })})
-        .setColor("#2F3136")
+        .setColor("#2b2d31")
         .setDescription("```Generando informacion...```");
 
         await interaction.reply({ embeds:[think], ephemeral: false })
 
         const Code404 = new EmbedBuilder()
         .setAuthor({ name: `${user.username}`, iconURL: interaction.member.displayAvatarURL({ dynamic: true })})
-        .setColor("#2F3136")
-        .setDescription("```"+"Tienes que primero registrar un codigo con el comando "+"/configuration code"+" antes de poder usar cyclone, solo el propietario puede hacer este registro.```");
+        .setColor("#2b2d31")
+        .setDescription("```"+"Para usar Cyclone la instancia de este servidor debe ser registrada. "+"Usa `/configuration code`"+", Solo el propietario del servidor puede hacer el registro.```");
 
 
         if(!fs.existsSync(__dirname+"/Data/ServerData"+`/${guildsave}/`)){
@@ -59,17 +60,17 @@ module.exports = {
 
         const missingperms = new EmbedBuilder()
         .setAuthor({ name: `${user.username}`, iconURL: interaction.member.displayAvatarURL({ dynamic: true })})
-        .setColor("#2F3136")
+        .setColor("#2b2d31")
         .setDescription("```No tienes los permisos necesarios para usar este comando.```");
 
         const missingbcks = new EmbedBuilder()
         .setAuthor({ name: `${user.username}`, iconURL: interaction.member.displayAvatarURL({ dynamic: true })})
-        .setColor("#2F3136")
-        .setDescription("```El backup especificado no es valido.```");
+        .setColor("#2b2d31")
+        .setDescription("```La id proporcionada no existe o no es valida.```");
 
         const list404 = new EmbedBuilder()
         .setAuthor({ name: `${user.username}`, iconURL: interaction.member.displayAvatarURL({ dynamic: true })})
-        .setColor("#2F3136")
+        .setColor("#2b2d31")
         .setDescription("```Este servidor no tiene ninguna copia de seguridad.```");
 
         backup.setStorageFolder(__dirname+"/Data/backups"+`/${guildsave}/`);
@@ -109,7 +110,7 @@ module.exports = {
           const formatedDate = `${(dd[1]?dd:"0"+dd[0])}/${(mm[1]?mm:"0"+mm[0])}/${yyyy}`;
         const answerbasic = new EmbedBuilder()
         .setAuthor({ name: `${user.username}`, iconURL: interaction.member.displayAvatarURL({ dynamic: true })})
-        .setColor("#2F3136")
+        .setColor("#2b2d31")
         .addFields(
           { name: "Id del Backup:" , value: "```" + `${backupInfos.id}`+ "```", inline: true },
 

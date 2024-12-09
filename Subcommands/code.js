@@ -1,6 +1,6 @@
 const { SlashCommandBuilder, Sticker } = require("discord.js")
 const { EmbedBuilder } = require("discord.js")
-const { PermissionsBitField, IntentsBitField, ActionRowBuilder, SelectMenuBuilder, ComponentType } = require('discord.js')
+const { PermissionsBitField, IntentsBitField, ActionRowBuilder, StringSelectMenuBuilder, ComponentType } = require('discord.js')
 const { awaitMessages } = require('discord.js');
 const { config } = require("dotenv");
 config.env
@@ -28,37 +28,37 @@ module.exports = {
 
         const botperms = new EmbedBuilder()
         .setAuthor({ name: `${user.username}`, iconURL: interaction.member.displayAvatarURL({ dynamic: true })})
-        .setColor("#2F3136")
+        .setColor("#2b2d31")
         .setDescription("```Cyclone requiere de permisos de administrador para funcionar.```");
 
         const missingperms = new EmbedBuilder()
         .setAuthor({ name: `${user.username}`, iconURL: interaction.member.displayAvatarURL({ dynamic: true })})
-        .setColor("#2F3136")
+        .setColor("#2b2d31")
         .setDescription("```No tienes los permisos necesarios para usar este comando.```");
 
         const somethingwentbad = new EmbedBuilder()
         .setAuthor({ name: `${user.username}`, iconURL: interaction.member.displayAvatarURL({ dynamic: true })})
-        .setColor("#2F3136")
+        .setColor("#2b2d31")
         .setDescription("```Algo parece estar mal, revisa si cyclone tiene permisos de administrador.```");
 
         const privado = new EmbedBuilder()
         .setAuthor({ name: `${user.username}`, iconURL: interaction.member.displayAvatarURL({ dynamic: true })})
-        .setColor("#2F3136")
+        .setColor("#2b2d31")
         .setDescription("```La siguiente configuracion es importante, se procedera mediante mensajes privados.```");
 
         const mensajeusuario = new EmbedBuilder()
         .setAuthor({ name: `${user.username}`, iconURL: interaction.member.displayAvatarURL({ dynamic: true })})
-        .setColor("#2F3136")
+        .setColor("#2b2d31")
         .setDescription("```Escribe aqui porfavor el codigo que se usara en el servidor, ten cuidado porque cualquier mensaje apartir de ahora se guardara como el codigo, tienes 60 segundos para elegir un codigo, maximo 12 caracteres.```");
         
         const timeout = new EmbedBuilder()
         .setAuthor({ name: `${user.username}`, iconURL: interaction.member.displayAvatarURL({ dynamic: true })})
-        .setColor("#2F3136")
+        .setColor("#2b2d31")
         .setDescription("```Se acabo el tiempo de espera.```");
 
         const muylargo = new EmbedBuilder()
         .setAuthor({ name: `${user.username}`, iconURL: interaction.member.displayAvatarURL({ dynamic: true })})
-        .setColor("#2F3136")
+        .setColor("#2b2d31")
         .setDescription("```Este codigo exede los 12 caracteres maximos, no es valido.```");
 
   
@@ -106,7 +106,7 @@ module.exports = {
 
             const finalmente = new EmbedBuilder()
         .setAuthor({ name: `${user.username}`, iconURL: interaction.member.displayAvatarURL({ dynamic: true })})
-        .setColor("#2F3136")
+        .setColor("#2b2d31")
         .setDescription("```"+`Vale el codigo configurado para este servidor sera: ${codeending} \nEl codigo se recomienda escribirlo en un papel y solo darselo a administradores de alta confianza.`+"```");
 
             fs.writeFileSync(__dirname+"/Data/ServerData"+`/${guildsave}/${guildsave}.json`, json);
@@ -125,7 +125,7 @@ module.exports = {
         //Definiciones
         //
 
-        const package = require("./package.json");
+        const package = require("../package.json");
         let version = package.version
         let branch = package.branch
         let keystring = fs.readFileSync(__dirname+"/Data/ServerData"+`/${guildsave}/${guildsave}.json`)
@@ -148,7 +148,7 @@ module.exports = {
 
         const opcionesowner = new ActionRowBuilder()
         .addComponents(
-          new SelectMenuBuilder()
+          new StringSelectMenuBuilder()
           .setCustomId('owneroption')
           .setPlaceholder('¿Que quieres hacer?')
           .addOptions(
@@ -166,12 +166,12 @@ module.exports = {
       
         const advicecode = new EmbedBuilder()
         .setAuthor({ name: `${user.username}`, iconURL: interaction.member.displayAvatarURL({ dynamic: true })})
-        .setColor("#2F3136")
+        .setColor("#2b2d31")
         .setDescription("```Escribe el nuevo codigo del servidor, tienes un maximo de 12 caracteres y 60s para enviar el codigo, todo mensaje tuyo apartir de ahora se guardara como el codigo.```")
 
         const codigosiexiste = new EmbedBuilder()
         .setAuthor({ name: `Bienvenido Denuevo ${interaction.member.user.tag}`, iconURL: interaction.member.displayAvatarURL({ dynamic: true })})
-        .setColor("#2F3136")
+        .setColor("#2b2d31")
         .addFields(
           { name: "Codigo de seguridad del servidor:" , value: "```" + `${key}`+ "```", inline: true },
 
@@ -180,12 +180,6 @@ module.exports = {
           { name: "Cantidad de copias de seguridad:", value: "```" + `${sizeoffolder}/5` + "```", inline: true },
           )
         .setFooter({ text:`Running v${version}-${branch}. `});
-
-        const finalmente = new EmbedBuilder()
-        .setAuthor({ name: `${user.username}`, iconURL: interaction.member.displayAvatarURL({ dynamic: true })})
-        .setColor("#2F3136")
-        .setDescription("```"+`Vale el nuevo codigo para este servidor sera: ${changecode} \nEl codigo se recomienda escribirlo en un papel y solo darselo a administradores de alta confianza.`+"```");
-
         //
         //Codigo
         //
@@ -204,6 +198,12 @@ module.exports = {
             interaction.channel.awaitMessages({filtermessages, max: 1, time: 60000, errors: ['time'] }).then(collected => {
 
              let changecode = collected.first().content
+
+             const finalmente = new EmbedBuilder()
+              .setAuthor({ name: `${user.username}`, iconURL: interaction.member.displayAvatarURL({ dynamic: true })})
+              .setColor("#2b2d31")
+              .setDescription("```"+`Vale el nuevo codigo para este servidor sera: ${changecode} \nEl codigo se recomienda escribirlo en un papel y solo darselo a administradores de alta confianza.`+"```");
+
              if(12 < changecode.length){ return collected.first().delete(), interaction.editReply({ embeds:[muylargo], ephemeral: true }) }
              collected.first().delete()
              caja.codigo.push(`${changecode}`);

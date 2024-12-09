@@ -12,11 +12,13 @@ const client = new Client({ intents: [GatewayIntentBits.Guilds,
 const fs = require('node:fs');
 
 module.exports = {
+	//esta sera la dashboard, no tengo dinero para un dominio asi que... esto sera MAS que suficiente.
   
     data: new SlashCommandBuilder()
 	.setName('configuration')
 	.setDescription('ON TESTING')
 	.addSubcommand(subcommand =>
+		//este subcomando necesita un nuevo nombre o todo el comando.
 		subcommand
 			.setName('code')
 			.setDescription('Añadir o cambiar el codigo de seguridad.'))
